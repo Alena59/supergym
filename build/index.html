@@ -78,7 +78,7 @@
         </section>
         <section class="subscription">
           <div class="container">
-            <h2></h2>
+            <h2>Абонементы</h2>
             <!-- <div class="tabs"> -->
               <div class="subscription__month-list month" id="tabs">
                 <button class="month__item is-active"></button>
@@ -189,6 +189,7 @@
         </section>
         <section class="advantages">
           <div class="container">
+            <h2>Наши преимущества</h2>
             <ul class="advantages__list">
               <li class="advantages__item">
                 <div class="advantages__box">
@@ -210,7 +211,7 @@
                   <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                 </div>
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--equipment">
                 <h3><span>100</span> тренажеров</h3>
                 <p>Современные тренажеры на все группы мышц</p>
               </li>
@@ -239,9 +240,10 @@
         </section>
         <section class="stocks">
           <div class="container">
+            <h2>Акции</h2>
             <ul class="stocks__list">
-              <li class="stocks__item">
-                <div class="promo__content-wrapper">
+              <li class="stocks__item stocks__item--unlimited">
+                <div class="stocks__content-wrapper">
                   <dl class="stocks__box">
                     <dt class="stocks__year">Год</dt>
                     <dd class="stocks__description">4999</dd>
@@ -276,7 +278,7 @@
         <section class="reviews">
           <div class="container">
             <h2>Отзывы</h2>
-            <div class="swiper">
+            <div class="reviews__swiper">
               <ul>
                 <li>
                   <picture>
@@ -294,42 +296,45 @@
           </div>
         </section>
         <section class="contacts">
-          <div class="contacts__form form">
-            <form>
-              <fieldset>
-                <legend>Бесплатное занятие</legend>
-                <div class="form__box">
-                  <label for="input-name" class="visually-hidden"></label>
-                  <input type="text" name="username" placeholder="Имя" id="input-name" autocomplete="off" data-required="true" required>
+          <div class="container">
+            <!-- <div class="contacts__form form"> -->
+              <form>
+                <fieldset>
+                  <legend>Бесплатное занятие</legend>
+                  <div class="form__box">
+                    <label for="input-name" class="visually-hidden"></label>
+                    <input type="text" name="username" placeholder="Имя" id="input-name" autocomplete="off" data-required="true" required>
+                  </div>
+                  <div class="form__box">
+                    <label for="input-phone" class="visually-hidden"></label>
+                    <input type="tel" name="phone" placeholder="Телефон" id="input-phone" autocomplete="off" data-validate-type="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{1,10}$" title="Только цифры" data-required="true" required>
+                  </div>
+                </fieldset>
+                <button class="form__btn btn" type="submit">Отправить</button>
+              </form>
+            <!-- </div> -->
+            <div class="contacts__address address">
+              <!-- <div class="address"> -->
+                <h2>Контакты</h2>
+                <address class="address__list">
+                <div class="contacts__box">
+                  <p>Адрес:</p>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
                 </div>
-                <div class="form__box">
-                  <label for="input-phone" class="visually-hidden"></label>
-                  <input type="tel" name="phone" placeholder="Телефон" id="input-phone" autocomplete="off" data-validate-type="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{1,10}$" title="Только цифры" data-required="true" required>
+                <div class="contacts__box">
+                  <p>График работы</p>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
                 </div>
-              </fieldset>
-              <button class="form__btn btn" type="submit">Отправить</button>
-            </form>
-          </div>
-          <div class="contacts__address">
-            <h2>Контакты</h2>
-            <address>
-              <div class="contacts__box">
-                <p>Адрес:</p>
-                <p>г. Омск, ул. 60 лет Октября, 7</p>
-              </div>
-              <div class="contacts__box">
-                <p>График работы</p>
-                <p>Пн-Вс: с 8:00 до 22:00</p>
-              </div>
-              <div class="contacts__box">
-                <p>Телефон:</p>
-                <p>8-800-555-55-55</p>
-              </div>
-              <div class="contacts__box">
-                <p>Email:</p>
-                <p>omsk@supergym.ru</p>
-              </div>
-              </address>
+                <div class="contacts__box">
+                  <p>Телефон:</p>
+                  <p>8-800-555-55-55</p>
+                </div>
+                <div class="contacts__box">
+                  <p>Email:</p>
+                  <p>omsk@supergym.ru</p>
+                </div>
+                </address>
+              <!-- </div> -->
             </div>
           </div>
         </section>
