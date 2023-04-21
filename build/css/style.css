@@ -558,9 +558,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1366px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 103px;
 }
 @media (max-width: 1199px) {
   .container {
@@ -731,6 +731,60 @@ button,
   grid-template-columns: 1fr 1fr;
   max-width: 500px;
   padding: 85px 79px 87px 78px;
+}
+
+.trainers {
+  padding: 0 0 140px;
+}
+
+.trainers .container {
+  position: relative;
+}
+
+.trainers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  cursor: -webkit-grab;
+  cursor: grab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.trainers__item {
+  min-width: 260px;
+  -ms-flex-preferred-size: content;
+      flex-basis: content;
+  display: block;
+}
+
+.swiper {
+  max-width: 1160px;
+  height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  overflow: hidden;
+}
+
+.trainers__btn {
+  position: absolute;
+  top: 326px;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+  background: transparent;
+}
+
+.trainers__btn--left {
+  left: 40px;
+}
+
+.trainers__btn--right {
+  right: 40px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .advantages {
