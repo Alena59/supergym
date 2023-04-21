@@ -17,14 +17,13 @@
 
 .trainers__item {
   min-width: 260px;
-  flex-basis: content;
   display: block;
 }
 
 .swiper {
   max-width: 1160px;
   height: 100%;
-  box-sizing: content-box;
+  // box-sizing: content-box;
   overflow: hidden;
 }
 

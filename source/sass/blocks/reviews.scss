@@ -1,7 +1,36 @@
 .reviews {
   padding: 0 0 120px;
+
+  & h2 {
+    // display: flex;
+    // justify-content: center;
+    margin: 0 0 37px;
+  }
+}
+
+.reviews .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__list {
+  display: flex;
+  padding: 0;
+}
+
+.swiper-reviews {
+  max-width: 560px;
+  height: 100%;
+  // box-sizing: content-box;
+  overflow: hidden;
+}
+
+.reviews__item {
+  min-width: 100%;
 }
 
 .reviews__swiper {
+  // max-width: 560px;
   background: $color-resolution-blue;
 }

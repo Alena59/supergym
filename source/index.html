@@ -289,7 +289,7 @@
                 <p>Приведи друга, получи абонемент в подарок</p>
                 <a class="stocks__link">Подробнее</a>
               </li>
-              <li class="stocks__item">
+              <li class="stocks__item stocks__item--discount">
                 <h3>Скидка 20%</h3>
                 <p>Корпоративный фитнес  с командой</p>
                 <a class="stocks__link">Подробнее</a>
@@ -300,20 +300,33 @@
         <section class="reviews">
           <div class="container">
             <h2>Отзывы</h2>
-            <div class="reviews__swiper">
-              <ul>
-                <li>
+            <div class="reviews__swiper swiper-reviews">
+              <ul class="reviews__list swiper-wrapper">
+                <li class="reviews__item swiper-slide">
                   <picture>
                     <img loading="lazy" src="img/review.png" srcset="img/review@2x.png 2x" width="80" height="80" alt="">
                   </picture>
                   <h3>Анна Орлова</h3>
                   <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </li>
-                <li>
+                <li class="reviews__item swiper-slide">
+                  <picture>
+                    <img loading="lazy" src="img/review.png" srcset="img/review@2x.png 2x" width="80" height="80" alt="">
+                  </picture>
                   <h3>Анна Орлова</h3>
                   <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </li>
               </ul>
+              <button class="swiper-button-prev">
+                <svg class="trainers__btn-icon" width="16" height="32">
+                  <use xlink:href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <button class="swiper-button-next">
+                <svg class="trainers__btn-icon" width="16" height="32">
+                  <use xlink:href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </section>
@@ -323,11 +336,11 @@
               <form>
                 <fieldset>
                   <legend>Бесплатное занятие</legend>
-                  <div class="form__box">
+                  <div class="contacts__form-box">
                     <label for="input-name" class="visually-hidden"></label>
                     <input type="text" name="username" placeholder="Имя" id="input-name" autocomplete="off" data-required="true" required>
                   </div>
-                  <div class="form__box">
+                  <div class="contacts__form-box">
                     <label for="input-phone" class="visually-hidden"></label>
                     <input type="tel" name="phone" placeholder="Телефон" id="input-phone" autocomplete="off" data-validate-type="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{1,10}$" title="Только цифры" data-required="true" required>
                   </div>

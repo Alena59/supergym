@@ -1,7 +1,23 @@
 .stocks {
   padding: 100px 0 117px;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.stocks__list {
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .stocks__item--unlimited {
+  display: flex;
+  grid-row: 1/3;
   background: $color-torch-red;
+}
+
+.stocks__item--discount {
+  grid-column: 2/3;
 }

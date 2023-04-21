@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTrainersSwiper} from './modules/swiper-trainers';
+import {initReviewsSwiper} from './modules/swiper-reviews';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initTrainersSwiper();
+    initReviewsSwiper();
   });
 });
 

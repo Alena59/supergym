@@ -1,6 +1,30 @@
+.contacts {
+  overflow: hidden;
+}
+
+.contacts .container {
+  display: flex;
+}
+
 .contacts form {
   padding: 56px 170px 70px 0;
   background: $color-sapphire;
+  position: relative;
+
+  &::after {
+    content:"";
+    z-index: -1;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background: $color-sapphire;
+  }
+}
+
+.contacts fieldset {
+  display: flex;
 }
 
 // .contacts__form {
