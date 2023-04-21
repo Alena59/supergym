@@ -1,6 +1,20 @@
 .subscription {
   padding: 120px 0;
   background: $color-ghost-white;
+
+  & h2 {
+    text-align: center;
+  }
+}
+
+.subscription__month-list {
+  text-align: center;
+}
+
+.subscription__ticket-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 // .description {

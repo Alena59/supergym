@@ -1,7 +1,15 @@
 .header {
   padding: 30px 0 51px;
-  background: #B80027;
+  background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  display: flex;
 }
+
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
 // .header {
 //   position: relative;
 //   overflow: hidden;
@@ -28,12 +36,6 @@
 //     min-height: 500px;
 //     padding-top: 14px;
 //   }
-// }
-
-// .header .container {
-//   display: flex;
-//   justify-content: space-between;
-//   gap: 50px;
 // }
 
 // .header__link-logo {

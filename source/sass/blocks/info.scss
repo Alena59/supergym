@@ -1,3 +1,13 @@
 .info {
   padding: 120px 0;
 }
+
+.info .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__content {
+  max-width: 504px;
+  padding: 53px 85px 0 67px;
+}
