@@ -1135,10 +1135,12 @@ button,
   letter-spacing: 0.03em;
   font-family: "Alumni Sans", "Arial", sans-serif;
   text-align: center;
+  margin: 0 0 25px;
 }
 
 .subscription__month-list {
   text-align: center;
+  margin-bottom: 39px;
 }
 
 .subscription__ticket-list {
@@ -1149,6 +1151,17 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 40px;
+}
+
+.ticket {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ticket__item {
+  padding: 68px 67px;
+  background: #ffffff;
 }
 
 .promo {
