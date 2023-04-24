@@ -5,9 +5,14 @@
 .info .container {
   display: flex;
   justify-content: space-between;
+  gap: 85px;
 }
 
 .info__content {
-  max-width: 504px;
-  padding: 53px 85px 0 67px;
+  max-width: 405px;
+  padding: 53px 0 0 67px;
+}
+
+.info__media {
+  min-width: 660px;
 }
