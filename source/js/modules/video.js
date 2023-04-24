@@ -8,10 +8,12 @@ function setupVideo() {
 
   button.addEventListener('click', () => {
     const iframe = createIframe();
-
+    const videoBox = document.createElement('div');
+    videoBox.classList.add('video__box');
     picture.remove();
     button.remove();
-    video.appendChild(iframe);
+    video.appendChild(videoBox);
+    videoBox.appendChild(iframe);
   });
 }
 

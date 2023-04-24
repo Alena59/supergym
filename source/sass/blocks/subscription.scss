@@ -3,6 +3,11 @@
   background: $color-ghost-white;
 
   & h2 {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    font-family: $ff-alumni-sans;
     text-align: center;
   }
 }
