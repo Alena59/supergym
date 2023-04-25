@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {initTrainersSwiper} from './modules/swiper-trainers';
 import {initReviewsSwiper} from './modules/swiper-reviews';
 import {setupVideo} from './modules/video';
+import {initTabs} from './modules/init-tabs';
 
 // ---------------------------------
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initTrainersSwiper();
     initReviewsSwiper();
     setupVideo();
+    initTabs();
   });
 });
 

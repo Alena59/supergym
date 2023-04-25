@@ -14,18 +14,18 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
-// @import "global/data-tabs.scss";
+@import "global/data-tabs";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
+@import "blocks/tabs";
 @import "blocks/header";
 @import "blocks/intro";
 @import "blocks/info";
 @import "blocks/video";
 @import "blocks/subscription";
-@import "blocks/ticket";
 @import "blocks/promo";
 @import "blocks/trainers";
 @import "blocks/advantages";

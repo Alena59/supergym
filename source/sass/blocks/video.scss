@@ -12,13 +12,13 @@
   left: -60px;
   // margin-right: auto;
   width: 364px;
-  height: auto;
+  height: 228px;
   transform: translateY(300px);
 
   @include vp-1199 {
     width: 36vw;
     bottom: -80px;
-    height: auto;
+    height: 22vw;
     left: 50%;
     transform: translateX(-18vw);
   }
@@ -31,15 +31,6 @@
     top: 0;
     transform: none;
   }
-
-  // & iframe {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   height: 100%;
-  //   width: 100%;
-  //   z-index: 30;
-  // }
 }
 
 .video__box {
@@ -48,7 +39,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  object-position: 100% 0;
+  // object-position: 100% 0;
 
   & iframe {
     width: 100%;
