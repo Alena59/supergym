@@ -2,6 +2,14 @@
   padding: 120px 0;
   background: $color-ghost-white;
 
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+
+  @include vp-1199 {
+    padding: 70px 0;
+  }
+
   & h2 {
     font-weight: 600;
     font-size: 54px;
