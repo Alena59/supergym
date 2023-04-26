@@ -1471,6 +1471,11 @@ button,
     line-height: 18px;
   }
 }
+@media (max-width: 767px) {
+  .promo__content-wrapper p {
+    margin-bottom: 36px;
+  }
+}
 
 @media (max-width: 1199px) {
   .promo__image-wrapper img {
@@ -1640,6 +1645,40 @@ button,
 .trainers .container {
   position: relative;
 }
+@media (max-width: 1199px) {
+  .trainers .container {
+    padding: 0 9%;
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .trainers .container {
+    padding: 0 12%;
+    width: 100%;
+  }
+}
+.trainers .container h2 {
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  margin: 0 0 31px;
+}
+@media (max-width: 1199px) {
+  .trainers .container h2 {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .trainers .container h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
 
 .trainers__list {
   margin: 0;
@@ -1652,20 +1691,19 @@ button,
   display: flex;
 }
 
-.trainers__item {
-  min-width: 260px;
-  display: block;
-}
-
 .trainers__swiper {
   max-width: 1160px;
-  height: 100%;
   overflow: hidden;
+}
+@media (max-width: 1199px) {
+  .trainers__swiper {
+    max-width: 100%;
+  }
 }
 
 .trainers__btn {
   position: absolute;
-  top: 326px;
+  top: 50%;
   border: none;
   z-index: 10;
   cursor: pointer;
@@ -1681,6 +1719,138 @@ button,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.trainer__content {
+  width: 19vw;
+  height: 22vw;
+  max-width: 260px;
+  max-height: 294px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10% 12%;
+  color: #ffffff;
+  overflow: hidden;
+}
+@media (max-width: 1199px) {
+  .trainer__content {
+    width: 50vw;
+    height: 40vw;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .trainer__content {
+    width: 80vw;
+    height: 80vw;
+  }
+}
+.trainer__content h3 {
+  margin: auto 0 0;
+  z-index: 10;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  font-size: 18px;
+  line-height: 27px;
+}
+.trainer__content span {
+  font-size: 16px;
+  line-height: 24px;
+  z-index: -5;
+  margin-bottom: 16%;
+}
+.trainer__content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.trainer__content--ivan img {
+  -o-object-position: left 50%;
+     object-position: left 50%;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.trainer__content--arcady img {
+  -o-object-position: 60% 50%;
+     object-position: 60% 50%;
+}
+.trainer__content--peter img {
+  -o-object-position: left 30%;
+     object-position: left 30%;
+}
+
+.trainer__list {
+  margin: 0 0 10px 8%;
+  padding-left: 15px;
+  text-align: start;
+  list-style: disc;
+  font-size: 14px;
+  line-height: 21px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  z-index: -5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+
+.trainer__content:hover {
+  background: rgba(16, 38, 84, 0.89);
+}
+.trainer__content:hover .trainer__list {
+  z-index: 10;
+}
+.trainer__content:hover h3 {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  margin: 0 0 2%;
+}
+.trainer__content:hover span {
+  z-index: 10;
+  color: #b6bdcc;
+}
+
+.trainer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.trainer__box::-webkit-scrollbar {
+  width: 0;
 }
 
 .advantages {

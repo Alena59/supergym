@@ -1,10 +1,41 @@
 .trainers {
   padding: 0 0 140px;
-
 }
 
 .trainers .container {
   position: relative;
+
+  @include vp-1199 {
+    padding: 0 9%;
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    padding: 0 12%;
+    width: 100%;
+  }
+
+  & h2 {
+    font-size: 54px;
+    line-height: 65px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    font-family: $ff-alumni-sans;
+    margin: 0 0 31px;
+
+
+    @include vp-1199 {
+      font-size: 42px;
+      line-height: 50px;
+      text-align: center;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
 }
 
 .trainers__list {
@@ -15,22 +46,18 @@
   display: flex;
 }
 
-.trainers__item {
-  min-width: 260px;
-  display: block;
-}
-
 .trainers__swiper {
   max-width: 1160px;
-  height: 100%;
-  // box-sizing: content-box;
   overflow: hidden;
-}
 
+  @include vp-1199 {
+    max-width: 100%;
+  }
+}
 
 .trainers__btn {
   position: absolute;
-  top: 326px;
+  top: 50%;
   border: none;
   z-index: 10;
   cursor: pointer;
@@ -45,3 +72,4 @@
   right: 40px;
   transform: rotate(180deg);
 }
+

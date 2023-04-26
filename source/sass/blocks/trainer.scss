@@ -1,0 +1,117 @@
+.trainer__content {
+  width: 19vw;
+  height: 22vw;
+  max-width: 260px;
+  max-height: 294px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 12%;
+  color: $color-default-white;
+  overflow: hidden;
+
+  @include vp-1199 {
+    width: 50vw;
+    height: 40vw;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  @include vp-767 {
+    width: 80vw;
+    height: 80vw;
+    // min-width: 226px;
+    // min-height: 274px;
+  }
+
+  & h3 {
+    margin: auto 0 0;
+    z-index: 10;
+    order: 2;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  & span {
+    font-size: 16px;
+    line-height: 24px;
+    z-index: -5;
+    margin-bottom: 16%;
+  }
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--ivan {
+    & img {
+      // top: 30px;
+      object-position: left 50%;
+      transform: scale(1.2);
+    }
+  }
+
+  &--arcady {
+    & img {
+      object-position: 60% 50%;
+    }
+  }
+
+  &--peter {
+    & img {
+      object-position: left 30%;
+    }
+  }
+}
+
+.trainer__list {
+  margin: 0 0 10px 8%;
+  padding-left: 15px;
+  text-align: start;
+  list-style: disc;
+  font-size: 14px;
+  line-height: 21px;
+  order: 1;
+  z-index: -5;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.trainer__content:hover {
+  background: rgba($color-sapphire, 89%);
+
+  & .trainer__list {
+    z-index: 10;
+  }
+
+  & h3 {
+    order: 0;
+    margin: 0 0 2%;
+  }
+
+  & span {
+    z-index: 10;
+    color: #b6bdcc;
+  }
+}
+
+.trainer__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
