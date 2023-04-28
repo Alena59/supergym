@@ -153,6 +153,14 @@
     height: 2px;
     background: rgba($colr-grey, 0.2);
   }
+
+  @include vp-767 {
+    gap: 54px;
+  }
+
+  @include vp-767 {
+    gap: 45px;
+  }
 }
 
 .tabs__control {
@@ -176,7 +184,25 @@
       background: $color-crimson;
     }
   }
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
+
+// .stocks__image-wrapper {
+//   & img {
+//     width: 280px;
+//   }
+
+// }
+
 
 .tabs__item:hover > .tabs__link,
 .tabs__link:focus-visible {

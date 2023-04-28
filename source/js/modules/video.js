@@ -10,7 +10,7 @@ function setupVideo() {
     const iframe = createIframe();
     const videoBox = document.createElement('div');
     videoBox.classList.add('video__box');
-    picture.remove();
+    // picture.remove();
     button.remove();
     video.appendChild(videoBox);
     videoBox.appendChild(iframe);

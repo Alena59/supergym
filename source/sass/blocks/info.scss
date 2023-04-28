@@ -13,7 +13,7 @@
 .info .container {
   display: flex;
   justify-content: space-between;
-  gap: 85px;
+  // gap: 9%;
 
   @include vp-1199 {
     flex-direction: column;
@@ -28,8 +28,8 @@
 }
 
 .info__content {
-  max-width: 405px;
-  padding: 53px 0 0 67px;
+  max-width: 436px;
+  padding: 53px 27px 0 67px;
 
   @include vp-1199 {
     max-width: 502px;
@@ -101,10 +101,14 @@
 }
 
 .info__media {
-  min-width: 660px;
   position: relative;
+  padding-left: 63px;
+  height: 26.2vw;
+  // max-width: 660px;
+  // position: relative;
 
   @include vp-1199 {
+    padding-left: 0;
     width: 100%;
     height: 100%;
   }
@@ -115,11 +119,18 @@
 }
 
 .info__video-wrapper {
-  @include vp-1199 {
-    & img {
-      width: 100%;
-      height: auto;
-    }
+
+  // max-width: 660px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    // @include vp-1199 {
+    //   width: 100%;
+    //   height: auto;
+    // }
   }
 
   @include vp-767 {

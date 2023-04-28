@@ -46,15 +46,25 @@
 }
 
 .promo__image-wrapper {
-  & img {
-    @include vp-1199 {
-      width: 57vw;
-      height: auto;
-    }
+  width: 57%;
 
-    @include vp-767 {
-      width: 100%;
-    }
+  @include vp-767 {
+    width: 100%;
+  }
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    // @include vp-1199 {
+    //   width: 57vw;
+    //   height: auto;
+    // }
+
+    // @include vp-767 {
+    //   width: 100%;
+    // }
   }
 }
 
