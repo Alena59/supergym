@@ -1,19 +1,21 @@
-// .social {
-//   list-style-type: none;
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: flex-end;
-//   padding: 0;
-//   gap: 24px;
+.social {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0;
+  gap: 11px;
 
-//   @include vp-1023 {
-//     gap: 21px;
-//   }
+  @include vp-767 {
+    justify-content: flex-start;
+  }
+}
 
-//   @include vp-767 {
-//     gap: 18px;
-//   }
-// }
+.social__item a {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
 
 // .social__icon {
 //   @include vp-1023 {

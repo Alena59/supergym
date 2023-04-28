@@ -153,6 +153,7 @@
   }
 
   & h3 {
+    text-align: center;
     margin: 0 0 53px;
     font-size: 26px;
     line-height: 39px;
@@ -171,12 +172,13 @@
   & span {
     font-weight: 700;
     font-size: 74px;
-    line-height: 80px;
-    color: $color-ghost-white;
+    line-height: 90px;
+    color: $color-default-white;
+    // color: $color-ghost-white;
 
     @include vp-1199 {
       font-size: 74px;
-      line-height: 49px;
+      line-height: 60px;
       margin: 0 0 20px;
     }
   }
