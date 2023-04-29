@@ -9,50 +9,6 @@
   @include vp-1199 {
     flex-direction: column;
   }
-
-  // @include vp-767 {
-  //   padding: 0 15px;
-  // }
-}
-
-.contacts__box--stripe {
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    background-color: $light-slate-grey;
-    top: 0;
-    left: 0;
-    height: 1000%;
-  }
-
-  @include vp-767 {
-    &::after {
-      content: "";
-      height: 0;
-    }
-  }
-}
-
-.contacts__box {
-  padding: 0 20% 0 0;
-
-  @include vp-1199 {
-    padding: 0 48px 0 0;
-  }
-
-  &:nth-child(2n) {
-    padding: 0 0 0 20%;
-
-    @include vp-1199 {
-      padding: 0 0 0 48px;
-    }
-
-    @include vp-767 {
-      padding: 0;
-    }
-  }
 }
 
 .contacts__form {
@@ -83,6 +39,16 @@
     width: 100vw;
     height: 100%;
     background: $color-sapphire;
+  }
+}
+
+.contacts__address {
+  max-width: 487px;
+  margin-left: auto;
+
+  @include vp-1199 {
+    max-width: 100%;
+    margin: 0;
   }
 }
 

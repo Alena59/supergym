@@ -1,9 +1,12 @@
 .subscription {
-  padding: 120px 0;
-  background: $color-ghost-white;
+  overflow: hidden;
+  position: relative;
+  padding: 120px 0 190px;
+  background: linear-gradient(to bottom, $color-ghost-white 94.5%,$color-default-white 94.5%);
 
   @include vp-1199 {
-    padding: 100px 0;
+    background: linear-gradient(to bottom, $color-ghost-white 97.5%,$color-default-white 97.5%);
+    padding: 100px 0 160px;
   }
 
   @include vp-767 {
@@ -23,6 +26,32 @@
       font-size: 42px;
       line-height: 50px;
     }
+  }
+}
+
+.subscription__image-wrap {
+  position: absolute;
+  bottom: 100px;
+  right: -66px;
+  width: 321px;
+  height: 284px;
+  transform: scale(1.2);
+
+  @include vp-1199 {
+    right: 28px;
+    bottom: -2px;
+    width: 289px;
+    height: 345px;
+    // transform: scale(1.2);
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
   }
 }
 
