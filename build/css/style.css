@@ -556,6 +556,92 @@ button,
   outline: none;
 }
 
+.error-validation input {
+  -webkit-box-shadow: inset 0 0 8px #8a0000;
+          box-shadow: inset 0 0 8px #8a0000;
+}
+
+.error-validation input[type=checkbox] + label::before {
+  -webkit-box-shadow: inset 0 0 5px #8a0000;
+          box-shadow: inset 0 0 5px #8a0000;
+}
+
+.error-message {
+  position: absolute;
+  color: #efc0c0;
+  font-size: 12px;
+  line-height: 18px;
+  bottom: -20px;
+  left: 0;
+}
+
+.success,
+.error {
+  position: fixed;
+  z-index: 110;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  background-color: rgba(37, 50, 92, 0.78);
+}
+
+.success__wrapper,
+.error__wrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin: auto;
+  padding-top: 110px;
+  background: #ffffff;
+}
+@media (max-width: 767px) {
+  .success__wrapper,
+.error__wrapper {
+    padding-top: 90px;
+    width: 230px;
+    height: 230px;
+  }
+}
+
+.success__wrapper {
+  width: 400px;
+  height: 400px;
+  padding-top: 230px;
+  background: url("../img/mark.png") center 35%/80px 80px no-repeat, #ffffff;
+}
+@media (max-width: 767px) {
+  .success__wrapper {
+    padding-top: 160px;
+    width: 250px;
+    height: 250px;
+    background-size: 60px 60px;
+    background-position: center 40%;
+  }
+}
+
+.success__message,
+.error__message {
+  color: #0450a7;
+  margin: 0;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .success__message,
+.error__message {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1366px;
@@ -1300,7 +1386,6 @@ button,
 .info__media {
   position: relative;
   padding-left: 63px;
-  height: 26.2vw;
 }
 @media (max-width: 1199px) {
   .info__media {
@@ -2810,6 +2895,7 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     margin: 0;
+    gap: 0;
   }
 }
 .form input {
@@ -2838,6 +2924,9 @@ button,
   color: rgba(255, 255, 255, 0.7);
 }
 
+.form__box {
+  position: relative;
+}
 @media (max-width: 767px) {
   .form__box {
     margin: 0 0 40px;
