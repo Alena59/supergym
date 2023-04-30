@@ -29,6 +29,12 @@
     color: $color-default-white;
     align-self: flex-start;
 
+    transition: opacity $trans-default;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+
     @include vp-1199 {
       font-size: 24px;
       line-height: 29px;
@@ -38,5 +44,21 @@
       font-size: 20px;
       line-height: 24px;
     }
+  }
+}
+
+.header__link-logo {
+  width: 122px;
+  height: 44px;
+  display: block;
+
+  @include vp-1199 {
+    width: 82px;
+    height: 17px;
+  }
+
+  @include vp-767 {
+    width: 69px;
+    height: 24px;
   }
 }

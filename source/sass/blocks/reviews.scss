@@ -119,22 +119,10 @@
     row-gap: 20px;
     column-gap: 15px;
     padding: 40px 25px;
-
-    // max-width: 290px;
-    // height: 70vw;
-    // padding: 32px 21px 33px 28px;
-    // width: 226px;
   }
 }
 
-// .reviews__item {
-//   grid-template-columns: 1fr 1fr;
-// }
-
 .reviews__content-image {
-  // min-width: 80px;
-  // min-height: 80px;
-  // width: 12vw;
   width: 80px;
   height: 80px;
   display: block;
@@ -153,13 +141,13 @@
     height: auto;
     grid-row: 1/2;
   }
-}
 
-// .reviews__content-text {
-//   display: flex;
-//   flex-direction: column;
-//   width: 78%;
-// }
+  &--vasiliy {
+    & img {
+      object-position: 50% 10%;
+    }
+  }
+}
 
 .reviews__btn {
   cursor: pointer;
@@ -187,18 +175,12 @@
 
   &--right {
     right: 50%;
-    // right: 350px;
     transform: rotate(180deg) translate(-350px, -20px);
 
     @include vp-767 {
       right: 0;
       transform: rotate(180deg) translate(10px, -35px);
     }
-
-    // @include vp-1199 {
-    //   right: 50%;
-    //   transform: rotate(180deg) translate(-350px, -20px);
-    // }
   }
 
   &--left {
@@ -209,10 +191,5 @@
       left: 0;
       transform: translate(10px, 30px);
     }
-    // left: 350px;
-    // @include vp-1199 {
-    //   left: 50%;
-    //   transform: translate(-350px, 30px);
-    // }
   }
 }

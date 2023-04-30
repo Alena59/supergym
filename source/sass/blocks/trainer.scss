@@ -21,8 +21,6 @@
   @include vp-767 {
     width: 80vw;
     height: 80vw;
-    // min-width: 226px;
-    // min-height: 274px;
   }
 
   & h3 {
@@ -49,14 +47,6 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
-  }
-
-  &--ivan {
-    & img {
-      // top: 30px;
-      object-position: left 50%;
-      transform: scale(1.2);
-    }
   }
 
   &--arcady {

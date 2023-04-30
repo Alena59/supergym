@@ -13,7 +13,6 @@
 .info .container {
   display: flex;
   justify-content: space-between;
-  // gap: 9%;
 
   @include vp-1199 {
     flex-direction: column;
@@ -103,9 +102,6 @@
 .info__media {
   position: relative;
   padding-left: 63px;
-  // height: 26.2vw;
-  // max-width: 660px;
-  // position: relative;
 
   @include vp-1199 {
     padding-left: 0;
@@ -134,8 +130,6 @@
   position: absolute;
   left: -19px;
   width: 50%;
-  // max-width: 364px;
-  // max-height: 228px;
   transform: translateY(128%);
 
   @include vp-1199 {

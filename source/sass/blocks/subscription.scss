@@ -42,7 +42,6 @@
     bottom: -2px;
     width: 289px;
     height: 345px;
-    // transform: scale(1.2);
   }
 
   @include vp-767 {
@@ -65,81 +64,3 @@
   justify-content: space-between;
   gap: 40px;
 }
-
-// .description {
-//   padding: 120px 0 145px;
-
-//   @include vp-1023 {
-//     padding: 90px 0 94px;
-//   }
-
-//   @include vp-767 {
-//     padding: 56px 0 85px;
-//   }
-
-//   & p {
-//     margin: 0;
-//   }
-
-//   & h2 {
-//     font-weight: 600;
-//     font-size: 28px;
-//     line-height: 42px;
-//     margin: 0 0 24px 0;
-
-//     @include vp-1023 {
-//       font-size: 26px;
-//       line-height: 36px;
-//       margin: 0 0 16px 0;
-//       max-width: 300px;
-//     }
-
-//     @include vp-767 {
-//       max-width: 100%;
-//       font-size: 24px;
-//       line-height: 34px;
-//     }
-//   }
-
-//   & img {
-//     display: block;
-//     margin: 0 auto;
-//     object-fit: contain;
-
-//     @include vp-1023 {
-//       padding-top: 10px;
-//     }
-
-//     @include vp-767 {
-//       padding-top: 0;
-//     }
-//   }
-// }
-
-// .description .container {
-//   position: relative;
-//   display: flex;
-//   justify-content: space-between;
-//   gap: 30px;
-
-//   @include vp-767 {
-//     flex-direction: column;
-//     gap: 43px;
-//   }
-// }
-
-// .description__content {
-//   display: flex;
-//   flex-direction: column;
-//   max-width: 512px;
-//   padding: 56px 0 0;
-
-//   @include vp-1023 {
-//     padding: 0;
-//     max-width: 324px;
-//   }
-
-//   @include vp-767 {
-//     max-width: 100%;
-//   }
-// }

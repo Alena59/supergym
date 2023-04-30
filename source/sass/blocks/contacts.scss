@@ -26,10 +26,6 @@
     padding: 70px 15px;
   }
 
-  // @include vp-1219 {
-  //   padding: 56px 12% 70px 0;
-  // }
-
   &::after {
     content:"";
     z-index: -1;

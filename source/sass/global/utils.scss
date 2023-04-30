@@ -71,19 +71,15 @@
 }
 
 .error-validation input {
-  box-shadow: inset 0 0 8px #8a0000;
-}
-
-.error-validation input[type="checkbox"] + label::before {
-  box-shadow: inset 0 0 5px #8a0000;
+  box-shadow: 0 0 5px #ffffff;
 }
 
 .error-message {
   position: absolute;
-  color: #efc0c0;
+  color: #ece1e1;
   font-size: 12px;
   line-height: 18px;
-  bottom: -20px;
+  bottom: -23px;
   left: 0;
 }
 

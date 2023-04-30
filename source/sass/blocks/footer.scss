@@ -2,11 +2,18 @@
   padding: 44px 0;
   background: $color-black-russian;
   margin-top: auto;
+
+  & a {
+    transition: opacity $trans-default;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
 }
 
 .footer .container {
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   gap: 7%;
 
