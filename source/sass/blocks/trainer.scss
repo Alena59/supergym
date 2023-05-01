@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10% 12%;
+  padding: 9% 17%;
   color: $color-default-white;
   overflow: hidden;
   background: #495a7d;
@@ -34,9 +34,9 @@
 
   & span {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     z-index: -5;
-    margin-bottom: 16%;
+    margin-bottom: 19%;
   }
 
   & img {
@@ -75,10 +75,11 @@
   z-index: -5;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  row-gap: 13px;
 }
 
 .trainer__content:hover {
+  padding: 20% 17%;
   background: rgba($color-sapphire, 89%);
 
   & .trainer__list {
@@ -87,7 +88,7 @@
 
   & h3 {
     order: 0;
-    margin: 0 0 2%;
+    margin: 0;
   }
 
   & span {

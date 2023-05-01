@@ -22,8 +22,7 @@
     font-weight: 600;
     letter-spacing: 0.03em;
     font-family: $ff-alumni-sans;
-    margin: 0 0 31px;
-
+    margin: 0 0 44px;
 
     @include vp-1199 {
       font-size: 42px;
@@ -62,6 +61,7 @@
   z-index: 10;
   cursor: pointer;
   background: transparent;
+  transform: translateY(40px);
 }
 
 .trainers__btn--left {
@@ -70,5 +70,5 @@
 
 .trainers__btn--right {
   right: 40px;
-  transform: rotate(180deg);
+  transform: translateY(40px) rotate(180deg);
 }
