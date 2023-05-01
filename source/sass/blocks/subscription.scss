@@ -2,10 +2,10 @@
   overflow: hidden;
   position: relative;
   padding: 120px 0 190px;
-  background: linear-gradient(to bottom, $color-ghost-white 94.5%,$color-default-white 94.5%);
+  background: linear-gradient(to bottom, $color-ghost-white 94.5%, $color-default-white 94.5%);
 
   @include vp-1199 {
-    background: linear-gradient(to bottom, $color-ghost-white 97.5%,$color-default-white 97.5%);
+    background: linear-gradient(to bottom, $color-ghost-white 97.5%, $color-default-white 97.5%);
     padding: 100px 0 160px;
   }
 
@@ -49,6 +49,8 @@
   }
 
   & img {
+    font-size: 12px;
+    line-height: 15px;
     width: 100%;
     height: auto;
   }

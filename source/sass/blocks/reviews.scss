@@ -58,10 +58,10 @@
   @include vp-767 {
     padding: 0 47px;
   }
-
 }
 
 .reviews__list {
+  list-style-type: none;
   color: $color-default-white;
   display: flex;
   padding: 0;
@@ -73,10 +73,6 @@
   background: $color-resolution-blue;
   overflow: hidden;
   width: 560px;
-  // display: block;
-  // margin: 0;
-  // padding: 0;
-
 
   @include vp-1199 {
     width: 566px;
@@ -87,13 +83,7 @@
   }
 }
 
-.reviews__list {
-
-  list-style-type: none;
-}
-
 .reviews__content {
-  // background: $color-resolution-blue;
   padding: 30px 40px;
   width: 560px;
   display: grid;
@@ -106,7 +96,7 @@
 
   & p {
     @include vp-767 {
-      grid-row: 2/3 ;
+      grid-row: 2/3;
       grid-column: 1/3;
       text-align: center;
     }
@@ -126,11 +116,13 @@
   width: 80px;
   height: 80px;
   display: block;
-  clip-path: circle(50.0% at 50% 50%);
-  grid-row: 1/3 ;
+  clip-path: circle(50% at 50% 50%);
+  grid-row: 1/3;
   grid-column: 1/2;
 
   & img {
+    font-size: 13px;
+    line-height: 20px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -155,7 +147,6 @@
   border: none;
   position: absolute;
   top: 50%;
-  cursor: pointer;
   user-select: none;
 
   &:disabled {

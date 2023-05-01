@@ -10,6 +10,7 @@
   padding: 10% 12%;
   color: $color-default-white;
   overflow: hidden;
+  background: #495a7d;
 
   @include vp-1199 {
     width: 50vw;
@@ -39,10 +40,11 @@
   }
 
   & img {
+    color: $color-default-white;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -3;
+    z-index: 0;
     display: block;
     object-fit: cover;
     width: 100%;
@@ -91,6 +93,10 @@
   & span {
     z-index: 10;
     color: #b6bdcc;
+  }
+
+  & img {
+    z-index: -3;
   }
 }
 

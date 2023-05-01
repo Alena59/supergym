@@ -49,11 +49,12 @@
 
 .address__box--stripe {
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
     width: 1px;
-    background-color: $light-slate-grey;
+    background-color: $color-light-slate-grey;
     top: 0;
     left: 0;
     height: 1000%;

@@ -73,7 +73,7 @@
 
   & p {
     font-size: 16px;
-    font-weight: 24px;
+    line-height: 24px;
     color: $color-sapphire;
     margin: 0;
     font-weight: 300;
@@ -102,6 +102,8 @@
 .info__media {
   position: relative;
   padding-left: 63px;
+  width: 100%;
+  height: 100%;
 
   @include vp-1199 {
     padding-left: 0;
