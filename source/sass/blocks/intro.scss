@@ -2,6 +2,11 @@
   display: flex;
   gap: 5.4%;
 
+  @include vp-1199 {
+    padding: 18px 0 0;
+    gap: 4%;
+  }
+
   & h2 {
     grid-row: 2/3;
     grid-column: 2/3;
@@ -18,7 +23,7 @@
     @include vp-1199 {
       font-size: 72px;
       line-height: 86px;
-      letter-spacing: 0.03em;
+      text-transform: none;
     }
 
     @include vp-767 {
@@ -43,8 +48,7 @@
     @include vp-1199 {
       font-size: 34px;
       line-height: 41px;
-      padding: 0;
-      text-transform: uppercase;
+      padding-right: 7px;
     }
 
     @include vp-767 {
@@ -60,11 +64,9 @@
 
   & img {
     height: auto;
-    // max-height: 556px;
     width: 100%;
     object-fit: cover;
     transform: translateY(-20px);
-
 
     @include vp-1199 {
       width: 100%;
@@ -80,7 +82,8 @@
   flex-direction: column;
 
   @include vp-1199 {
-    padding: 57px 0 10px;
+    padding: 50px 0 10px;
+    min-width: 48%;
     max-width: 50%;
   }
 
@@ -94,16 +97,17 @@
 .intro__content-inner {
   display: grid;
   min-width: 396px;
-  // padding-left: 20px;
   grid-template-columns: minmax(130px, 200px) minmax(255px, 1fr);
   row-gap: 13px;
   column-gap: 2%;
   margin-bottom: 49px;
 
   @include vp-1199 {
-    row-gap: 0;
-    column-gap: 7%;
-    margin-bottom: 40px;
+    grid-template-columns: minmax(100px, 200px) 1fr;
+    min-width: 100%;
+    row-gap: 7px;
+    column-gap: 8%;
+    margin-bottom: 36px;
   }
 
   @include vp-767 {
@@ -121,9 +125,9 @@
   }
 
   @include vp-1199 {
-    width: 29vw;
-    max-height: 390px;
+    height: 390px;
     min-width: 324px;
+    max-width: 324px;
   }
 
   @include vp-767 {
@@ -141,6 +145,10 @@
   line-height: 21px;
   padding: 0 0 35px;
   margin: 0;
+
+  @include vp-1199 {
+    padding: 0 0 20px;
+  }
 
   @include vp-767 {
     transform: translateX(15px);
@@ -162,7 +170,7 @@
   min-width: 234px;
 
   @include vp-1199 {
-    padding: 24px 33px;
+    padding: 20px 32px;
     min-width: 183px;
   }
 

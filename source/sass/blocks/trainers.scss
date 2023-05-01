@@ -1,5 +1,9 @@
 .trainers {
   padding: 0 0 140px;
+
+  @include vp-1199 {
+    padding: 0 0 100px;
+  }
 }
 
 .trainers .container {
@@ -7,7 +11,7 @@
 
   @include vp-1199 {
     padding: 0 9%;
-    width: 90vw;
+    width: 92vw;
     margin: 0 auto;
   }
 
@@ -28,6 +32,7 @@
       font-size: 42px;
       line-height: 50px;
       text-align: center;
+      margin: 0 0 30px;
     }
 
     @include vp-767 {
@@ -62,13 +67,28 @@
   cursor: pointer;
   background: transparent;
   transform: translateY(40px);
+
+  @include vp-1199 {
+    transform: translateY(24px);
+  }
 }
 
 .trainers__btn--left {
   left: 40px;
+
+  @include vp-1199 {
+    left: 9px;
+  }
 }
 
 .trainers__btn--right {
   right: 40px;
-  transform: translateY(40px) rotate(180deg);
+
+  @include vp-1199 {
+    right: 9px;
+  }
+}
+
+.trainers__btn-icon--right {
+  transform: rotate(180deg);
 }

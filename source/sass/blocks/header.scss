@@ -5,7 +5,8 @@
   color: $color-default-white;
 
   @include vp-1199 {
-    padding: 40px 0 82px;
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%,#b80027 -46.69deg,#003d85 32.24deg,#b80027 313.31deg,#003d85 392.24deg);
+    padding: 35px 0 82px;
   }
 }
 
@@ -53,6 +54,7 @@
   display: block;
 
   @include vp-1199 {
+    margin-top: 5px;
     width: 82px;
     height: 17px;
   }
@@ -61,4 +63,9 @@
     width: 69px;
     height: 24px;
   }
+}
+
+.header__logo-icon {
+  width: 100%;
+  height: auto;
 }

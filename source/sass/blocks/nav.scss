@@ -21,7 +21,8 @@
   justify-content: flex-start;
 
   @include vp-1199 {
-    gap: 30px;
+    gap: 31px;
+    margin: 0;
   }
 
   @include vp-767 {

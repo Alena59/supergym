@@ -1,5 +1,5 @@
 .trainer__content {
-  width: 19vw;
+  width: 19.1vw;
   height: 22vw;
   max-width: 260px;
   max-height: 294px;
@@ -14,9 +14,10 @@
 
   @include vp-1199 {
     width: 50vw;
-    height: 40vw;
+    height: 38.2vw;
     max-width: 100%;
     max-height: 100%;
+    padding: 20px 30px;
   }
 
   @include vp-767 {
@@ -37,6 +38,10 @@
     line-height: 20px;
     z-index: -5;
     margin-bottom: 19%;
+
+    @include vp-1199 {
+      margin-bottom: 32px;
+    }
   }
 
   & img {
@@ -76,10 +81,14 @@
   display: flex;
   flex-direction: column;
   row-gap: 13px;
+
+  @include vp-1199 {
+    margin: 0 0 10px 11px;
+  }
 }
 
 .trainer__content:hover {
-  padding: 20% 17%;
+  padding: 20% 17% 15%;
   background: rgba($color-sapphire, 89%);
 
   & .trainer__list {

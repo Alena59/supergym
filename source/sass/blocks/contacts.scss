@@ -13,13 +13,13 @@
 
 .contacts__form {
   width: 50vw;
-  padding: 56px 80px 60px 103px;
+  padding: 56px 80px 65px 102px;
   background: $color-sapphire;
   position: relative;
 
   @include vp-1199 {
     width: 100%;
-    padding: 70px 163px 70px 133px;
+    padding: 58px 163px 70px 133px;
   }
 
   @include vp-767 {
@@ -39,7 +39,7 @@
 }
 
 .contacts__address {
-  max-width: 487px;
+  max-width: 476px;
   margin-left: auto;
 
   @include vp-1199 {
@@ -50,11 +50,11 @@
 
 .contacts__wrapper-address {
   width: 50vw;
-  padding: 56px 87px 70px 80px;
+  padding: 56px 87px 65px 80px;
 
   @include vp-1199 {
     width: 100%;
-    padding: 70px 133px;
+    padding: 62px 102px 60px 133px;
   }
 
   @include vp-767 {

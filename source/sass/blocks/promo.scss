@@ -2,7 +2,7 @@
   padding: 50px 0 110px;
 
   @include vp-1199 {
-    padding: 40px 0 100px;
+    padding: 38px 0 100px;
   }
 }
 
@@ -21,6 +21,10 @@
   width: 43%;
   display: flex;
   flex-direction: column;
+
+  @include vp-1199 {
+    padding: 48px 46px 50px;
+  }
 
   @include vp-767 {
     width: 100%;
@@ -63,7 +67,10 @@
   margin-bottom: 5%;
 
   @include vp-1199 {
-    grid-template-columns: minmax(117px, 250px) max-content;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    column-gap: 5%;
   }
 
   @include vp-767 {
@@ -72,12 +79,11 @@
     justify-content: space-between;
   }
 
-
   & h2 {
     font-weight: 600;
     font-size: 82px;
     line-height: 79px;
-    padding-left: 5.6%;
+    padding-left: 6px;
     letter-spacing: 0.03em;
     font-family: $ff-alumni-sans;
     margin: 0;
@@ -106,11 +112,12 @@
 
   @include vp-1199 {
     font-size: 10px;
-    line-height: 15px;
+    line-height: 14px;
     padding: 0;
+    gap: 4px;
 
     &:not(:last-child) {
-      margin-bottom: 13px;
+      margin: 0;
     }
   }
 
@@ -131,7 +138,7 @@
 
     @include vp-1199 {
       font-size: 24px;
-      line-height: 36px;
+      line-height: 32px;
     }
   }
 }
@@ -171,7 +178,7 @@
   @include vp-1199 {
     font-size: 10px;
     line-height: 12px;
-    padding: 16px 10px;
+    padding: 18px 10px;
     border: 2px solid $color-default-white;
   }
 }
