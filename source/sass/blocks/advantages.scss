@@ -175,7 +175,7 @@
     }
 
     @include vp-767 {
-      margin: 0 0 10px;
+      margin: 5px;
     }
   }
 
@@ -188,13 +188,13 @@
 
     @include vp-1199 {
       font-size: 74px;
-      line-height: 65px;
+      line-height: 60px;
       margin: 0 0 4px;
     }
 
     @include vp-767 {
       margin: 0;
-      line-height: 65px;
+      line-height: 60px;
     }
   }
 
@@ -224,6 +224,6 @@
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 41px;
   }
 }

@@ -2796,7 +2796,7 @@ button,
 
   .advantages__item--equipment span {
     font-size: 74px;
-    line-height: 65px;
+    line-height: 60px;
     margin: 0 0 4px;
   }
 
@@ -3344,12 +3344,12 @@ button,
   }
 
   .advantages__item--equipment h3 {
-    margin: 0 0 10px;
+    margin: 5px;
   }
 
   .advantages__item--equipment span {
     margin: 0;
-    line-height: 65px;
+    line-height: 60px;
   }
 
   .advantages__list {
@@ -3362,7 +3362,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 40px;
+    gap: 41px;
   }
 
   .stocks {
