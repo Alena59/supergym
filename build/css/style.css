@@ -3349,6 +3349,7 @@ button,
 
   .advantages__item--equipment span {
     margin: 0;
+    line-height: 65px;
   }
 
   .advantages__list {
