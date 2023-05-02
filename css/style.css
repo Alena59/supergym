@@ -3343,6 +3343,7 @@ button,
     min-height: 239px;
     padding: 44px 55px 42px;
     margin: 0 0 5px;
+    gap: 0;
   }
 
   .advantages__item--equipment h3 {
