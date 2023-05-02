@@ -3304,7 +3304,7 @@ button,
     font-size: 32px;
     line-height: 38px;
     padding: 0 20px 0 0;
-    margin: 0 0 44px;
+    margin: 0 0 45px;
   }
 
   .advantages .container {
@@ -3321,6 +3321,7 @@ button,
     align-items: center;
     gap: 7px;
     padding: 0 44px 0;
+    min-width: 282px;
   }
 
   .advantages__item span {
@@ -3341,10 +3342,11 @@ button,
     width: 100%;
     min-height: 239px;
     padding: 44px 55px 42px;
+    margin: 0 0 5px;
   }
 
   .advantages__item--equipment h3 {
-    margin: 5px;
+    margin: 0 0 10px;
   }
 
   .advantages__item--equipment span {
@@ -3353,8 +3355,6 @@ button,
   }
 
   .advantages__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3362,7 +3362,11 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 41px;
+    row-gap: 38px;
+  }
+
+  .advantages__item--space {
+    padding-bottom: 5px;
   }
 
   .stocks {
