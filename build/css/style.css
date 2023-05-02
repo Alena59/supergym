@@ -3339,6 +3339,7 @@ button,
 
   .advantages__item--equipment {
     width: 100%;
+    min-height: 239px;
     padding: 44px 55px 42px;
   }
 
