@@ -3319,13 +3319,15 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 7px;
+    gap: 0;
     padding: 0 44px 0;
     min-width: 282px;
   }
 
   .advantages__item span {
     line-height: 17px;
+    display: block;
+    margin-bottom: 7px;
   }
 
   .advantages__item p {
@@ -3343,7 +3345,6 @@ button,
     min-height: 239px;
     padding: 44px 55px 42px;
     margin: 0 0 5px;
-    gap: 0;
   }
 
   .advantages__item--equipment h3 {
