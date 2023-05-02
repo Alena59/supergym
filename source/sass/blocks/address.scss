@@ -8,7 +8,7 @@
     letter-spacing: 0.03em;
 
     @include vp-1199 {
-      margin: 0 0 30px;
+      margin: 0 0 31px;
       font-size: 42px;
       line-height: 50px;
     }
@@ -68,6 +68,7 @@
     &::after {
       content: "";
       top: 8px;
+      right: 0;
       height: calc(100% + 65px);
     }
   }

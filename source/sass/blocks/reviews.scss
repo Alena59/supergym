@@ -2,7 +2,7 @@
   padding: 0 0 120px;
 
   @include vp-1199 {
-    padding: 0 0 100px;
+    padding: 0 0 98px;
   }
 
 
@@ -20,6 +20,7 @@
     font-family: $ff-alumni-sans;
 
     @include vp-1199 {
+      margin: 0 0 40px;
       font-size: 42px;
       line-height: 50px;
     }
