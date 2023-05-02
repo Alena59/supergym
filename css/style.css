@@ -3356,6 +3356,8 @@ button,
   }
 
   .advantages__item--equipment h3 {
+    font-size: 22px;
+    line-height: 33px;
     margin: 0 0 10px;
   }
 
