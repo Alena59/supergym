@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 65px 0;
   }
 
   & h2 {
@@ -30,6 +30,8 @@
     @include vp-767 {
       font-size: 32px;
       line-height: 38px;
+      padding: 0 20px 0 0;
+      margin: 0 0 44px;
     }
   }
 }
@@ -52,8 +54,8 @@
   @include vp-767 {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 0 47px 0;
+    gap: 7px;
+    padding: 0 44px 0;
   }
 
   & b {
@@ -71,16 +73,16 @@
       line-height: 55px;
       margin-bottom: 0;
     }
-
-    @include vp-767 {
-      font-size: 58px;
-    }
   }
 
   & span {
     color: #2e35ac;
     font-size: 14px;
     line-height: 21px;
+
+    @include vp-767 {
+      line-height: 17px;
+    }
   }
 
   & h3 {
@@ -101,6 +103,10 @@
     font-size: 16px;
     line-height: 22px;
     margin: 0;
+
+    @include vp-767 {
+      text-align: center;
+    }
   }
 }
 
@@ -153,7 +159,7 @@
 
   @include vp-767 {
     width: 100%;
-    padding: 50px 47px;
+    padding: 44px 55px 42px;
   }
 
   & h3 {
@@ -169,7 +175,7 @@
     }
 
     @include vp-767 {
-      margin: 0 0 25px;
+      margin: 0 0 10px;
     }
   }
 
@@ -213,6 +219,6 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
   }
 }

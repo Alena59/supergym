@@ -4,6 +4,10 @@
   @include vp-1199 {
     padding: 38px 0 100px;
   }
+
+  @include vp-1199 {
+    padding: 72px 0 65px;
+  }
 }
 
 .promo .container {
@@ -27,6 +31,7 @@
   }
 
   @include vp-767 {
+    padding: 48px 45px 49px;
     width: 100%;
   }
 
@@ -41,7 +46,7 @@
     }
 
     @include vp-767 {
-      margin-bottom: 36px;
+      margin-bottom: 33px;
     }
   }
 }

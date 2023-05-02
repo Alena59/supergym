@@ -14,6 +14,7 @@
     }
 
     @include vp-767 {
+      margin: 0 0 35px;
       font-size: 32px;
       line-height: 38px;
     }
@@ -45,6 +46,7 @@
   }
 
   @include vp-767 {
+    row-gap: 17px;
     grid-template-columns: 1fr;
   }
 }
@@ -113,5 +115,17 @@
     @include vp-767 {
       padding: 0;
     }
+  }
+}
+
+.address__box--tel {
+  @include vp-767 {
+    order: 2;
+  }
+}
+
+.address__box--email {
+  @include vp-767 {
+    order: 3;
   }
 }

@@ -25,6 +25,7 @@
     }
 
     @include vp-767 {
+      margin: 0 0 44px;
       font-size: 32px;
       line-height: 38px;
     }
@@ -39,6 +40,10 @@
     @include vp-1199 {
       font-size: 20px;
       line-height: 26px;
+    }
+
+    @include vp-767 {
+      margin: 13px 0 0;
     }
   }
 
@@ -95,21 +100,21 @@
     width: 566px;
   }
 
+  @include vp-767 {
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 74px 1fr;
+    max-width: 100%;
+    row-gap: 14px;
+    column-gap: 15px;
+    padding: 36px 25px 34px;
+  }
+
   & p {
     @include vp-767 {
       grid-row: 2/3;
       grid-column: 1/3;
       text-align: center;
     }
-  }
-
-  @include vp-767 {
-    grid-template-columns: 68px 1fr;
-    grid-template-rows: 68px 1fr;
-    max-width: 100%;
-    row-gap: 20px;
-    column-gap: 15px;
-    padding: 40px 25px;
   }
 }
 
@@ -131,8 +136,10 @@
   }
 
   @include vp-767 {
-    width: auto;
+    margin-left: 16px;
+    width: 68px;
     height: auto;
+    min-width: 68px;
     grid-row: 1/2;
   }
 
@@ -150,6 +157,7 @@
   position: absolute;
   top: 50%;
   user-select: none;
+  transition: opacity $trans-default;
 
   &:disabled {
     opacity: 0.5;
@@ -161,11 +169,6 @@
     opacity: 0.8;
   }
 
-  @include vp-767 {
-    width: 10px;
-    height: 19px;
-  }
-
   &--right {
     right: 50%;
     transform: translate(340px, 34px);
@@ -175,7 +178,8 @@
     }
 
     @include vp-767 {
-      right: 0;
+      right: 10px;
+      transform: translateY(32px);
     }
   }
 
@@ -188,8 +192,16 @@
     }
 
     @include vp-767 {
-      left: 0;
+      left: 10px;
+      transform: translateY(32px);
     }
+  }
+}
+
+.reviews__btn-icon {
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
   }
 }
 
