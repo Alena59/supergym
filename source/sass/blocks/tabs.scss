@@ -44,7 +44,7 @@
   @include vp-767 {
     width: 100%;
     min-height: 384px;
-    padding: 44px 10px 47px;
+    padding: 44px 32px 47px;
   }
 
   & h3 {
@@ -82,6 +82,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-top: auto;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .tabs__box {
