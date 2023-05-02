@@ -38,23 +38,11 @@
 
 // Desktop first
 
-// @mixin vp-1200 {
-//   @media (max-width: ($vp-1920 - 1px)) {
-//     @content;
-//   }
-// }
-
 @mixin vp-1199 {
   @media (max-width: ($vp-1200 - 1px)) {
     @content;
   }
 }
-
-// @mixin vp-1219 {
-//   @media (max-width: ($vp-1220 - 1px)) {
-//     @content;
-//   }
-// }
 
 @mixin vp-1300 {
   @media (min-width: ($vp-1300)) {
@@ -68,17 +56,6 @@
   }
 }
 
-// @mixin vp-1023 {
-//   @media (max-width: ($vp-1024 - 1px)) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-767 {
-//   @media (max-width: ($vp-768 - 1px)) {
-//     @content;
-//   }
-// }
 
 @mixin vp-320 {
   @media (min-width: ($vp-320)) {

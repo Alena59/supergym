@@ -1195,6 +1195,7 @@ button,
   -webkit-transform: translateY(-20px);
       -ms-transform: translateY(-20px);
           transform: translateY(-20px);
+  background: #141b4f;
 }
 @media (max-width: 1199px) {
   .intro img {
@@ -1519,6 +1520,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  background: #d8d8e2;
 }
 @media (max-width: 767px) {
   .info__video-wrapper {
@@ -1624,6 +1626,9 @@ button,
     height: auto;
   }
 }
+.video__btn img {
+  background: none;
+}
 
 .subscription {
   overflow: hidden;
@@ -1698,8 +1703,6 @@ button,
   }
 }
 .subscription__image-wrap img {
-  font-size: 12px;
-  line-height: 15px;
   width: 100%;
   height: auto;
 }
@@ -1801,6 +1804,7 @@ button,
      object-fit: cover;
   width: 100%;
   height: 100%;
+  background: #141b4f;
 }
 
 .promo__content {
@@ -1974,6 +1978,29 @@ button,
     padding: 0 0 70px;
   }
 }
+.trainers h2 {
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  margin: 0 0 44px;
+}
+@media (max-width: 1199px) {
+  .trainers h2 {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0 0 40px;
+  }
+}
 
 .trainers .container {
   position: relative;
@@ -1989,29 +2016,6 @@ button,
   .trainers .container {
     padding: 0 14.5%;
     width: 100%;
-  }
-}
-.trainers .container h2 {
-  font-size: 54px;
-  line-height: 65px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  margin: 0 0 44px;
-}
-@media (max-width: 1199px) {
-  .trainers .container h2 {
-    font-size: 42px;
-    line-height: 50px;
-    text-align: center;
-    margin: 0 0 30px;
-  }
-}
-@media (max-width: 767px) {
-  .trainers .container h2 {
-    font-size: 32px;
-    line-height: 38px;
-    margin: 0 0 40px;
   }
 }
 
@@ -2786,6 +2790,7 @@ button,
      object-fit: cover;
   width: 100%;
   height: 100%;
+  background: #5a9ce8;
 }
 
 .reviews {
@@ -2953,8 +2958,6 @@ button,
   grid-column: 1/2;
 }
 .reviews__content-image img {
-  font-size: 13px;
-  line-height: 20px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2964,7 +2967,7 @@ button,
   .reviews__content-image {
     margin-left: 16px;
     width: 68px;
-    height: auto;
+    height: 68px;
     min-width: 68px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;

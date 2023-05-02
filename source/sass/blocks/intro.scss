@@ -72,6 +72,7 @@
     width: 100%;
     object-fit: cover;
     transform: translateY(-20px);
+    background: $color-lucky-point;
 
     @include vp-1199 {
       width: 100%;

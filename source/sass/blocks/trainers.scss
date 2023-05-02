@@ -8,21 +8,6 @@
   @include vp-767 {
     padding: 0 0 70px;
   }
-}
-
-.trainers .container {
-  position: relative;
-
-  @include vp-1199 {
-    padding: 0 9%;
-    width: 92vw;
-    margin: 0 auto;
-  }
-
-  @include vp-767 {
-    padding: 0 14.5%;
-    width: 100%;
-  }
 
   & h2 {
     font-size: 54px;
@@ -44,6 +29,21 @@
       line-height: 38px;
       margin: 0 0 40px;
     }
+  }
+}
+
+.trainers .container {
+  position: relative;
+
+  @include vp-1199 {
+    padding: 0 9%;
+    width: 92vw;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    padding: 0 14.5%;
+    width: 100%;
   }
 }
 
