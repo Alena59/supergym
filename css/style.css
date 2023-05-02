@@ -2752,6 +2752,7 @@ button,
     -webkit-column-gap: 24px;
     -moz-column-gap: 24px;
     column-gap: 24px;
+    row-gap: 0;
   }
 
   .advantages__item b {
