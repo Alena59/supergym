@@ -2749,7 +2749,9 @@ button,
 
   .advantages__item {
     min-height: 62px;
-    gap: 24px;
+    -webkit-column-gap: 24px;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
   }
 
   .advantages__item b {
@@ -2761,7 +2763,6 @@ button,
   .advantages__item h3 {
     font-size: 20px;
     line-height: 30px;
-    margin: 0 0 2px;
   }
 
   .advantages__item--comfort,
@@ -3328,6 +3329,12 @@ button,
     line-height: 17px;
     display: block;
     margin-bottom: 7px;
+  }
+
+  .advantages__item h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 2px;
   }
 
   .advantages__item p {
