@@ -3047,7 +3047,7 @@ button,
   .tabs__item {
     width: 100%;
     min-height: 384px;
-    padding: 44px 15px 47px;
+    padding: 44px 10px 47px;
   }
 
   .tabs__item h3 {
@@ -3353,6 +3353,8 @@ button,
   }
 
   .advantages__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
