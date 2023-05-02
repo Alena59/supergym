@@ -950,10 +950,6 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.tabs__control.focus-visible:focus {
-  opacity: 0.5;
-}
-
 .tabs__control.is-active {
   color: #102654;
 }
@@ -3662,10 +3658,6 @@ button,
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.6;
-  }
-
-  .tabs__control:hover:not(.focus-visible) {
-    opacity: 0.5;
   }
 
   .header__inner a:hover:not(.focus-visible) {
