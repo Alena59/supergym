@@ -770,6 +770,7 @@ button,
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #ffffff;
+  text-align: center;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -818,19 +819,21 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 55px 5px 59px;
+  padding: 55px 10px 60px;
   background: #ffffff;
   border: 7px solid #ffffff;
+  min-height: 448px;
 }
 
 .tabs__item:hover {
-  border: 10px solid;
+  border: 7px solid;
   border-image-slice: 1;
   border-width: 7px;
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
 }
 
 .tabs__item h3 {
+  text-align: center;
   font-size: 26px;
   line-height: 29px;
   margin: 0 0 10px;
@@ -878,7 +881,7 @@ button,
   -webkit-column-gap: 14px;
   -moz-column-gap: 14px;
   column-gap: 14px;
-  margin: 0 0 31px;
+  margin: 0 0 20px;
 }
 
 .tabs__box span {
@@ -893,7 +896,7 @@ button,
   font-weight: 700;
   font-size: 100px;
   line-height: 150px;
-  color: #e8e8e8;
+  color: rgba(232, 232, 232, 0.6);
   z-index: -1;
   content: attr(data-price);
 }
@@ -1301,9 +1304,9 @@ button,
   overflow: hidden;
   position: relative;
   padding: 119px 0 190px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(94.5%, #f8f9fc), color-stop(94.5%, #ffffff));
-  background: -o-linear-gradient(top, #f8f9fc 94.5%, #ffffff 94.5%);
-  background: linear-gradient(to bottom, #f8f9fc 94.5%, #ffffff 94.5%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(92.3%, #f8f9fc), color-stop(92.3%, #ffffff));
+  background: -o-linear-gradient(top, #f8f9fc 92.3%, #ffffff 92.3%);
+  background: linear-gradient(to bottom, #f8f9fc 92.3%, #ffffff 92.3%);
 }
 
 .subscription h2 {
@@ -1348,7 +1351,7 @@ button,
 }
 
 .promo {
-  padding: 50px 0 110px;
+  padding: 49px 0 109px;
 }
 
 .promo .container {
@@ -1360,7 +1363,7 @@ button,
 .promo__content-wrapper {
   background-color: #ed0233;
   color: #ffffff;
-  padding: 7.2% 6.6% 7.4%;
+  padding: 7.1% 6.6% 7.4%;
   width: 43%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1751,8 +1754,7 @@ button,
 }
 
 .advantages__item--equipment {
-  margin-top: 6px;
-  margin-bottom: 4px;
+  margin: 6px 8px 5px 0;
   color: #f8f9fc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1772,12 +1774,12 @@ button,
   -ms-grid-row-span: 2;
   grid-row: 1/3;
   background-color: #1c3374;
-  padding: 21% 10% 24%;
+  padding: 20% 10% 24%;
 }
 
 .advantages__item--equipment h3 {
   text-align: center;
-  margin: 0 0 33px;
+  margin: 0 0 30px;
   font-size: 26px;
   line-height: 39px;
 }
@@ -1799,16 +1801,16 @@ button,
 
 .advantages__list {
   margin: 0;
-  padding: 0 61px 0 78px;
+  padding: 0 61px 0 79px;
   display: -ms-grid;
   display: grid;
-  -webkit-column-gap: 5.8%;
-  -moz-column-gap: 5.8%;
-  column-gap: 5.8%;
-  -ms-grid-columns: minmax(-webkit-min-content, 340px) minmax(140px, 240px) minmax(-webkit-min-content, 340px);
-  -ms-grid-columns: minmax(min-content, 340px) minmax(140px, 240px) minmax(min-content, 340px);
-  grid-template-columns: minmax(-webkit-min-content, 340px) minmax(140px, 240px) minmax(-webkit-min-content, 340px);
-  grid-template-columns: minmax(min-content, 340px) minmax(140px, 240px) minmax(min-content, 340px);
+  -webkit-column-gap: 5%;
+  -moz-column-gap: 5%;
+  column-gap: 5%;
+  -ms-grid-columns: minmax(-webkit-min-content, 340px) minmax(180px, 250px) minmax(-webkit-min-content, 340px);
+  -ms-grid-columns: minmax(min-content, 340px) minmax(180px, 250px) minmax(min-content, 340px);
+  grid-template-columns: minmax(-webkit-min-content, 340px) minmax(180px, 250px) minmax(-webkit-min-content, 340px);
+  grid-template-columns: minmax(min-content, 340px) minmax(180px, 250px) minmax(min-content, 340px);
 }
 
 .stocks {
@@ -2438,12 +2440,12 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    row-gap: 38px;
+    row-gap: 40px;
   }
 
   .tabs__item {
     width: 440px;
-    padding: 59px 5px 60px;
+    padding: 59px 15px 58px;
   }
 
   .tabs__controls {
@@ -2462,6 +2464,7 @@ button,
   }
 
   .header__inner a {
+    letter-spacing: 0.02em;
     font-size: 24px;
     line-height: 29px;
   }
@@ -2601,9 +2604,9 @@ button,
   }
 
   .subscription {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(96.5%, #f8f9fc), color-stop(96.5%, #ffffff));
-    background: -o-linear-gradient(top, #f8f9fc 96.5%, #ffffff 96.5%);
-    background: linear-gradient(to bottom, #f8f9fc 96.5%, #ffffff 96.5%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(96.9%, #f8f9fc), color-stop(96.9%, #ffffff));
+    background: -o-linear-gradient(top, #f8f9fc 96.9%, #ffffff 96.9%);
+    background: linear-gradient(to bottom, #f8f9fc 96.9%, #ffffff 96.9%);
     padding: 100px 0 160px;
   }
 
@@ -2611,12 +2614,6 @@ button,
     font-size: 42px;
     line-height: 50px;
     padding-right: 10px;
-    margin: 0 0 13px;
-  }
-
-  .subscription h2 {
-    font-size: 32px;
-    line-height: 38px;
     margin: 0 0 13px;
   }
 
@@ -2628,15 +2625,11 @@ button,
   }
 
   .promo {
-    padding: 38px 0 100px;
-  }
-
-  .promo {
-    padding: 72px 0 65px;
+    padding: 42px 0 100px;
   }
 
   .promo__content-wrapper {
-    padding: 48px 46px 50px;
+    padding: 49px 46px 50px;
   }
 
   .promo__content-wrapper p {
@@ -2804,14 +2797,14 @@ button,
   .advantages__item--equipment span {
     font-size: 74px;
     line-height: 65px;
-    margin: 0;
+    margin: 0 0 4px;
   }
 
   .advantages__list {
     -webkit-column-gap: 4.7%;
     -moz-column-gap: 4.7%;
     column-gap: 4.7%;
-    row-gap: 45px;
+    row-gap: 43px;
     padding: 0;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -2869,10 +2862,11 @@ button,
   }
 
   .reviews {
-    padding: 0 0 100px;
+    padding: 0 0 98px;
   }
 
   .reviews h2 {
+    margin: 0 0 40px;
     font-size: 42px;
     line-height: 50px;
   }
@@ -2912,7 +2906,7 @@ button,
 
   .contacts__form {
     width: 100%;
-    padding: 58px 163px 70px 133px;
+    padding: 61px 163px 67px 133px;
   }
 
   .contacts__address {
@@ -2922,7 +2916,7 @@ button,
 
   .contacts__wrapper-address {
     width: 100%;
-    padding: 62px 102px 60px 133px;
+    padding: 62px 102px 59px 133px;
   }
 
   .form form {
@@ -2941,7 +2935,7 @@ button,
   }
 
   .footer {
-    padding: 44px 0 45px;
+    padding: 45px 0 45px;
   }
 
   .footer .container {
@@ -2974,7 +2968,7 @@ button,
   }
 
   .address h2 {
-    margin: 0 0 30px;
+    margin: 0 0 31px;
     font-size: 42px;
     line-height: 50px;
   }
@@ -2991,6 +2985,7 @@ button,
   .address__box--stripe::after {
     content: "";
     top: 8px;
+    right: 0;
     height: calc(100% + 65px);
   }
 
@@ -3051,7 +3046,8 @@ button,
 
   .tabs__item {
     width: 100%;
-    padding: 44px 5px;
+    min-height: 384px;
+    padding: 44px 15px 47px;
   }
 
   .tabs__item h3 {
@@ -3067,7 +3063,6 @@ button,
   .tabs__box {
     font-size: 48px;
     line-height: 52px;
-    margin: 0 0 42px;
   }
 
   .tabs__box span::before {
@@ -3210,8 +3205,18 @@ button,
     padding: 68px 0 70px;
   }
 
+  .subscription h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0 0 13px;
+  }
+
   .subscription__image-wrap {
     display: none;
+  }
+
+  .promo {
+    padding: 69px 0 65px;
   }
 
   .promo .container {
@@ -3222,12 +3227,12 @@ button,
   }
 
   .promo__content-wrapper {
-    padding: 48px 45px 49px;
+    padding: 48px 45px 50px;
     width: 100%;
   }
 
   .promo__content-wrapper p {
-    margin-bottom: 33px;
+    margin-bottom: 30px;
   }
 
   .promo__image-wrapper {
@@ -3244,6 +3249,10 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .promo__content-inner p {
+    margin-bottom: 1px;
   }
 
   .trainers {
@@ -3272,6 +3281,19 @@ button,
 
   .trainer__content {
     height: 85.6vw;
+  }
+
+  .trainer__content span {
+    margin-bottom: 30px;
+  }
+
+  .trainer__list {
+    margin: 0 0 0 7px;
+    padding: 0 0 0 14px;
+  }
+
+  .trainer__content:hover {
+    padding: 20% 13% 15%;
   }
 
   .advantages {
@@ -3322,6 +3344,10 @@ button,
 
   .advantages__item--equipment h3 {
     margin: 0 0 10px;
+  }
+
+  .advantages__item--equipment span {
+    margin: 0;
   }
 
   .advantages__list {
@@ -3481,7 +3507,7 @@ button,
   }
 
   .contacts__wrapper-address {
-    padding: 62px 14px 60px;
+    padding: 63px 14px 60px;
   }
 
   .form legend {
