@@ -1792,7 +1792,7 @@ button,
   font-weight: 600;
   font-size: 82px;
   line-height: 79px;
-  padding-left: 6px;
+  padding-left: 13px;
   letter-spacing: 0.03em;
   font-family: "Alumni Sans", "Arial", sans-serif;
   margin: 0;
@@ -1800,6 +1800,7 @@ button,
 }
 @media (max-width: 1199px) {
   .promo__content h2 {
+    padding-left: 6px;
     font-size: 48px;
     line-height: 46px;
   }
@@ -3146,13 +3147,13 @@ button,
 }
 
 .footer {
-  padding: 25px 0;
+  padding: 40px 0 29px;
   background: #030a1a;
   margin-top: auto;
 }
 @media (max-width: 1199px) {
   .footer {
-    padding: 27px 0 26px;
+    padding: 44px 0 45px;
   }
 }
 .footer a {
@@ -3173,9 +3174,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 7%;
 }
 @media (max-width: 1199px) {
@@ -3197,15 +3195,12 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 10%;
 }
 @media (max-width: 1199px) {
   .footer__nav {
-    gap: 11%;
-    width: 535px;
+    width: 100%;
+    gap: 0;
   }
 }
 @media (max-width: 767px) {
@@ -3218,18 +3213,16 @@ button,
 }
 
 .footer__social-list {
-  margin-left: auto;
+  margin: 0 0 0 auto;
   width: 180px;
 }
 @media (max-width: 1199px) {
   .footer__social-list {
-    gap: 11px;
     max-width: 100px;
   }
 }
 @media (max-width: 767px) {
   .footer__social-list {
-    gap: 11px;
     width: 100%;
     max-width: 100%;
     margin: 0;
@@ -3239,7 +3232,7 @@ button,
 .footer__link-logo {
   width: 88px;
   height: 32px;
-  margin-top: 8px;
+  margin-top: 4px;
   display: block;
 }
 @media (max-width: 1199px) {
@@ -3247,6 +3240,8 @@ button,
     margin: 0;
     width: 82px;
     height: 18px;
+    min-width: 82px;
+    margin-right: 60px;
   }
 }
 @media (max-width: 767px) {
@@ -3275,11 +3270,15 @@ button,
 }
 
 .nav__list {
+  max-width: 500px;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 40px;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 15px;
   margin: 0 0 0 auto;
   padding: 0;
   -ms-flex-wrap: wrap;
@@ -3290,7 +3289,10 @@ button,
 }
 @media (max-width: 1199px) {
   .nav__list {
-    gap: 31px;
+    -webkit-column-gap: 31px;
+       -moz-column-gap: 31px;
+            column-gap: 31px;
+    max-width: 100%;
     margin: 0;
   }
 }
@@ -3300,6 +3302,7 @@ button,
     width: 100%;
     display: -ms-grid;
     display: grid;
+    max-width: 460px;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
@@ -3343,6 +3346,8 @@ button,
           justify-content: flex-end;
   padding: 0;
   gap: 11px;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 @media (max-width: 767px) {
   .social {
@@ -3423,7 +3428,7 @@ button,
   width: 1px;
   background-color: #74819c;
   top: 6px;
-  right: 0;
+  right: 3px;
   height: calc(100% + 55px);
 }
 @media (max-width: 1199px) {
@@ -3441,7 +3446,7 @@ button,
 }
 
 .address__box {
-  padding: 0 23% 0 2%;
+  padding: 0 13% 0 2%;
 }
 .address__box :first-child {
   font-weight: 700;

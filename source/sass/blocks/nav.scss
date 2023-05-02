@@ -12,16 +12,19 @@
 }
 
 .nav__list {
+  max-width: 500px;
   list-style-type: none;
   display: flex;
-  gap: 40px;
+  column-gap: 40px;
+  row-gap: 15px;
   margin: 0 0 0 auto;
   padding: 0;
   flex-wrap: wrap;
   justify-content: flex-start;
 
   @include vp-1199 {
-    gap: 31px;
+    column-gap: 31px;
+    max-width: 100%;
     margin: 0;
   }
 
@@ -29,6 +32,7 @@
     margin: 0;
     width: 100%;
     display: grid;
+    max-width: 460px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }

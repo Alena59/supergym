@@ -58,7 +58,7 @@
     width: 1px;
     background-color: $color-light-slate-grey;
     top: 6px;
-    right: 0;
+    right: 3px;
     height: calc(100% + 55px);
   }
 
@@ -79,7 +79,7 @@
 }
 
 .address__box {
-  padding: 0 23% 0 2%;
+  padding: 0 13% 0 2%;
 
   & :first-child {
     font-weight: 700;

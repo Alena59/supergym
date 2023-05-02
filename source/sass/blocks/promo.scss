@@ -83,13 +83,14 @@
     font-weight: 600;
     font-size: 82px;
     line-height: 79px;
-    padding-left: 6px;
+    padding-left: 13px;
     letter-spacing: 0.03em;
     font-family: $ff-alumni-sans;
     margin: 0;
     text-transform: uppercase;
 
     @include vp-1199 {
+      padding-left: 6px;
       font-size: 48px;
       line-height: 46px;
     }

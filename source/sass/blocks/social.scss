@@ -5,6 +5,7 @@
   justify-content: flex-end;
   padding: 0;
   gap: 11px;
+  align-content: flex-start;
 
   @include vp-767 {
     justify-content: flex-start;
