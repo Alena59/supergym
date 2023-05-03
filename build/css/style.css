@@ -2107,7 +2107,7 @@ button,
 
 .contacts__form {
   width: 50vw;
-  padding: 56px 80px 65px 102px;
+  padding: 56px 80px 63px 102px;
   background: #102654;
   position: relative;
 }
@@ -2130,7 +2130,7 @@ button,
 
 .contacts__wrapper-address {
   width: 50vw;
-  padding: 56px 87px 65px 80px;
+  padding: 56px 87px 63px 80px;
 }
 
 .form form {
@@ -2344,7 +2344,7 @@ button,
 
 .address__list {
   overflow: hidden;
-  row-gap: 19px;
+  row-gap: 15px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -2988,7 +2988,7 @@ button,
   }
 
   .address__list {
-    row-gap: 19px;
+    row-gap: 18px;
   }
 
   .address__list--stripe::after {
