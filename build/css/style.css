@@ -792,7 +792,7 @@ button,
   pointer-events: none;
 }
 
-.btn.focus-visible:focus {
+.btn:hover {
   opacity: 0.6;
 }
 
@@ -1018,8 +1018,8 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.header__inner a.focus-visible:focus {
-  opacity: 0.8;
+.header__inner a:hover {
+  opacity: 0.6;
 }
 
 .header__link-logo {
@@ -2070,8 +2070,8 @@ button,
   pointer-events: none;
 }
 
-.reviews__btn.focus-visible:focus {
-  opacity: 0.8;
+.reviews__btn:hover {
+  opacity: 0.5;
 }
 
 .reviews__btn--right {
@@ -2234,8 +2234,8 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.footer a.focus-visible:focus {
-  opacity: 0.8;
+.footer a:hover {
+  opacity: 0.6;
 }
 
 .footer .container {
@@ -2338,7 +2338,7 @@ button,
   color: #102654;
 }
 
-.address a.focus-visible:focus {
+.address a:hover {
   opacity: 0.6;
 }
 
@@ -3671,27 +3671,7 @@ button,
 }
 
 @media (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    opacity: 0.6;
-  }
-
-  .header__inner a:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-
-  .reviews__btn:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-
   .form input:hover:not(.focus-visible) {
     opacity: 0.8;
-  }
-
-  .footer a:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-
-  .address a:hover:not(.focus-visible) {
-    opacity: 0.6;
   }
 }

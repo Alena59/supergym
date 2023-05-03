@@ -34,11 +34,10 @@
     display: inline-flex;
     color: $color-default-white;
     align-self: flex-start;
-
     transition: opacity $trans-default;
 
-    @include hover-focus {
-      opacity: 0.8;
+    &:hover {
+      opacity: 0.6;
     }
 
     @include vp-1199 {
