@@ -2948,6 +2948,7 @@ button,
 
   .footer .container {
     gap: 6%;
+    padding: 0 40px 0 45px;
   }
 
   .footer__nav {
@@ -3564,6 +3565,7 @@ button,
   }
 
   .footer .container {
+    padding: 0 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
