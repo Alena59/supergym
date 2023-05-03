@@ -3477,6 +3477,7 @@ button,
     -ms-grid-rows: 74px 1fr;
     grid-template-rows: 74px 1fr;
     max-width: 100%;
+    min-width: 100%;
     row-gap: 14px;
     -webkit-column-gap: 15px;
     -moz-column-gap: 15px;
