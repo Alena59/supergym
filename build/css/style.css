@@ -3466,7 +3466,8 @@ button,
   }
 
   .reviews__swiper {
-    max-width: 100%;
+    width: 100%;
+    max-width: 566px;
   }
 
   .reviews__content {
@@ -3477,7 +3478,6 @@ button,
     -ms-grid-rows: 74px 1fr;
     grid-template-rows: 74px 1fr;
     max-width: 100%;
-    min-width: 100%;
     row-gap: 14px;
     -webkit-column-gap: 15px;
     -moz-column-gap: 15px;
