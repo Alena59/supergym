@@ -51,7 +51,7 @@
   }
 }
 
-.address__box--stripe {
+.address__list--stripe {
   position: relative;
 
   &::after {
@@ -59,17 +59,17 @@
     position: absolute;
     width: 1px;
     background-color: $color-light-slate-grey;
-    top: 6px;
-    right: 3px;
-    height: calc(100% + 55px);
+    top: 5px;
+    right: calc(50% + 3px);
+    height: calc(100% - 11px);
   }
 
   @include vp-1199 {
     &::after {
       content: "";
       top: 8px;
-      right: 0;
-      height: calc(100% + 65px);
+      right: 50%;
+      height: calc(100% - 20px);
     }
   }
 

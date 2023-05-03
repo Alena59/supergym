@@ -2344,18 +2344,18 @@ button,
   padding: 0;
 }
 
-.address__box--stripe {
+.address__list--stripe {
   position: relative;
 }
 
-.address__box--stripe::after {
+.address__list--stripe::after {
   content: "";
   position: absolute;
   width: 1px;
   background-color: #74819c;
-  top: 6px;
-  right: 3px;
-  height: calc(100% + 55px);
+  top: 5px;
+  right: calc(50% + 3px);
+  height: calc(100% - 11px);
 }
 
 .address__box {
@@ -2981,11 +2981,11 @@ button,
     row-gap: 19px;
   }
 
-  .address__box--stripe::after {
+  .address__list--stripe::after {
     content: "";
     top: 8px;
-    right: 0;
-    height: calc(100% + 65px);
+    right: 50%;
+    height: calc(100% - 20px);
   }
 
   .address__box :first-child {
@@ -3634,7 +3634,7 @@ button,
     grid-template-columns: 1fr;
   }
 
-  .address__box--stripe::after {
+  .address__list--stripe::after {
     content: "";
     height: 0;
   }
