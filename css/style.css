@@ -2326,11 +2326,16 @@ button,
   letter-spacing: 0.03em;
 }
 
-.address p {
+.address p,
+.address a {
   font-style: normal;
   margin: 0;
   font-size: 14px;
   line-height: 21px;
+}
+
+.address a.focus-visible:focus {
+  opacity: 0.6;
 }
 
 .address__list {
@@ -2972,7 +2977,8 @@ button,
     line-height: 50px;
   }
 
-  .address p {
+  .address p,
+  .address a {
     font-size: 18px;
     line-height: 27px;
   }
@@ -3679,5 +3685,9 @@ button,
 
   .footer a:hover:not(.focus-visible) {
     opacity: 0.8;
+  }
+
+  .address a:hover:not(.focus-visible) {
+    opacity: 0.6;
   }
 }
