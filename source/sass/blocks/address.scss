@@ -20,7 +20,8 @@
     }
   }
 
-  & p {
+  & p,
+  a {
     font-style: normal;
     margin: 0;
     font-size: 14px;
@@ -29,6 +30,12 @@
     @include vp-1199 {
       font-size: 18px;
       line-height: 27px;
+    }
+  }
+
+  & a {
+    @include hover-focus {
+      opacity: 0.6;
     }
   }
 }
