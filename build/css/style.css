@@ -2334,6 +2334,10 @@ button,
   line-height: 21px;
 }
 
+.address a {
+  color: #102654;
+}
+
 .address a.focus-visible:focus {
   opacity: 0.6;
 }

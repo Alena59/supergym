@@ -34,6 +34,8 @@
   }
 
   & a {
+    color: $color-sapphire;
+
     @include hover-focus {
       opacity: 0.6;
     }
