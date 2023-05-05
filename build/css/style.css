@@ -2227,7 +2227,7 @@ button,
 }
 
 .footer {
-  padding: 43px 0 29px;
+  padding: 40px 0 29px;
   background: #030a1a;
   margin-top: auto;
 }
@@ -2349,7 +2349,7 @@ button,
 
 .address__list {
   overflow: hidden;
-  row-gap: 18px;
+  row-gap: 15px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -2990,6 +2990,10 @@ button,
   .address a {
     font-size: 18px;
     line-height: 27px;
+  }
+
+  .address__list {
+    row-gap: 18px;
   }
 
   .address__list--stripe::after {
