@@ -1303,9 +1303,8 @@ button,
   height: 100%;
   position: relative;
   padding: 119px 0 190px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(92.3%, #f8f9fc), color-stop(92.3%, #ffffff));
-  background: -o-linear-gradient(top, #f8f9fc 92.3%, #ffffff 92.3%);
-  background: linear-gradient(to bottom, #f8f9fc 92.3%, #ffffff 92.3%);
+  background: -o-linear-gradient(bottom, #ffffff 71px, #f8f9fc 71px);
+  background: linear-gradient(to top, #ffffff 71px, #f8f9fc 71px);
 }
 
 .subscription h2 {
@@ -2615,9 +2614,8 @@ button,
   }
 
   .subscription {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(96.9%, #f8f9fc), color-stop(96.9%, #ffffff));
-    background: -o-linear-gradient(top, #f8f9fc 96.9%, #ffffff 96.9%);
-    background: linear-gradient(to bottom, #f8f9fc 96.9%, #ffffff 96.9%);
+    background: -o-linear-gradient(bottom, #ffffff 58px, #f8f9fc 58px);
+    background: linear-gradient(to top, #ffffff 58px, #f8f9fc 58px);
     padding: 100px 0 160px;
   }
 
