@@ -3151,7 +3151,7 @@ button,
   }
 
   .intro__list {
-    margin-right: auto;
+    margin: 75px auto 0 0;
     padding: 0 0 32px;
   }
 
