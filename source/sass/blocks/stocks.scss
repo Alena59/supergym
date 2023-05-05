@@ -154,6 +154,7 @@
 }
 
 .stocks__item:not(:first-child) {
+  min-height: 211px;
   color: $color-resolution-blue;
   display: flex;
   flex-direction: column;
@@ -165,7 +166,6 @@
 
   @include vp-1199 {
     padding: 17px 28px 30px;
-    min-height: 211px;
   }
 
   @include vp-767 {

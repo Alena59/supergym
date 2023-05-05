@@ -29,14 +29,6 @@ function validateForm(form) {
 
     removeError(input);
 
-    if (input.dataset.validateType === 'phone') {
-      if (validatePhone(input)) {
-        removeError(input);
-        createError(input, 'Некорректный номер!');
-        result = false;
-      }
-    }
-
     if (input.dataset.required === 'true') {
       if (input.value === '') {
         removeError(input);
@@ -44,10 +36,6 @@ function validateForm(form) {
         result = false;
       }
     }
-  }
-
-  function validatePhone(input) {
-    return !/^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/.test(input.value);
   }
 
   return result;

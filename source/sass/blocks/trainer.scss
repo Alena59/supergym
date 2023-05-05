@@ -100,7 +100,8 @@
   }
 }
 
-.trainer__content:hover {
+.trainer__content:hover,
+.trainer__content:focus {
   padding: 20% 17% 15%;
   background: rgba($color-sapphire, 89%);
 
