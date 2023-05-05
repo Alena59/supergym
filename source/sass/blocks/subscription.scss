@@ -3,10 +3,10 @@
   height: 100%;
   position: relative;
   padding: 119px 0 190px;
-  background: linear-gradient(to bottom, $color-ghost-white 92.3%, $color-default-white 92.3%);
+  background: linear-gradient(to top, $color-default-white 71px, $color-ghost-white 71px);
 
   @include vp-1199 {
-    background: linear-gradient(to bottom, $color-ghost-white 96.9%, $color-default-white 96.9%);
+    background: linear-gradient(to top, $color-default-white 58px, $color-ghost-white 58px);
     padding: 100px 0 160px;
   }
 
