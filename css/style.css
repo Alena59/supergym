@@ -803,6 +803,7 @@ button,
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   gap: 4%;
+  row-gap: 40px;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -1299,6 +1300,7 @@ button,
 
 .subscription {
   overflow: hidden;
+  height: 100%;
   position: relative;
   padding: 119px 0 190px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(92.3%, #f8f9fc), color-stop(92.3%, #ffffff));
@@ -1628,28 +1630,33 @@ button,
   row-gap: 13px;
 }
 
-.trainer__content:hover {
+.trainer__content:hover,
+.trainer__content:focus {
   padding: 20% 17% 15%;
   background: rgba(16, 38, 84, 0.89);
 }
 
-.trainer__content:hover .trainer__list {
+.trainer__content:hover .trainer__list,
+.trainer__content:focus .trainer__list {
   z-index: 10;
 }
 
-.trainer__content:hover h3 {
+.trainer__content:hover h3,
+.trainer__content:focus h3 {
   -webkit-box-ordinal-group: 1;
   -ms-flex-order: 0;
   order: 0;
   margin: 0;
 }
 
-.trainer__content:hover span {
+.trainer__content:hover span,
+.trainer__content:focus span {
   z-index: 10;
   color: #b6bdcc;
 }
 
-.trainer__content:hover img {
+.trainer__content:hover img,
+.trainer__content:focus img {
   z-index: -3;
 }
 
@@ -1897,6 +1904,7 @@ button,
 }
 
 .stocks__item:not(:first-child) {
+  min-height: 211px;
   color: #1c3374;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2220,7 +2228,7 @@ button,
 }
 
 .footer {
-  padding: 40px 0 29px;
+  padding: 43px 0 29px;
   background: #030a1a;
   margin-top: auto;
 }
@@ -2332,6 +2340,7 @@ button,
 }
 
 .address a {
+  display: block;
   color: #102654;
 }
 
@@ -2341,7 +2350,7 @@ button,
 
 .address__list {
   overflow: hidden;
-  row-gap: 15px;
+  row-gap: 18px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -2443,7 +2452,6 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    row-gap: 40px;
   }
 
   .tabs__item {
@@ -2861,7 +2869,6 @@ button,
 
   .stocks__item:not(:first-child) {
     padding: 17px 28px 30px;
-    min-height: 211px;
   }
 
   .stocks__image-wrapper {
@@ -2985,10 +2992,6 @@ button,
   .address a {
     font-size: 18px;
     line-height: 27px;
-  }
-
-  .address__list {
-    row-gap: 18px;
   }
 
   .address__list--stripe::after {
@@ -3305,7 +3308,8 @@ button,
     padding: 0 0 0 14px;
   }
 
-  .trainer__content:hover {
+  .trainer__content:hover,
+  .trainer__content:focus {
     padding: 20% 13% 15%;
   }
 
