@@ -1883,7 +1883,7 @@ button,
   display: -ms-grid;
   display: grid;
   margin: 0;
-  row-gap: 8.1%;
+  row-gap: 40px;
   -webkit-column-gap: 3.5%;
   -moz-column-gap: 3.5%;
   column-gap: 3.5%;
@@ -1913,7 +1913,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 3.1% 5% 5%;
+  padding: 3% 5% 5%;
   border: 10px solid;
   border-image-slice: 1;
   border-width: 7px;
