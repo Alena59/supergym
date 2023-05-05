@@ -2339,7 +2339,7 @@ button,
 }
 
 .address a {
-  display: block;
+  display: inline-block;
   color: #102654;
 }
 
