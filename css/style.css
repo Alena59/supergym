@@ -1693,6 +1693,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 26px;
+  padding: 0 0 20px;
 }
 
 .advantages__item b {
@@ -1741,13 +1742,7 @@ button,
 .advantages__item--comfort,
 .advantages__item--experience {
   border-top: 2px solid rgba(209, 10, 66, 0.2);
-}
-
-.advantages__item--comfort .advantages__box,
-.advantages__item--experience .advantages__box {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  padding: 74px 0 0;
 }
 
 .advantages__item--equipment {
@@ -1760,6 +1755,9 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1804,6 +1802,8 @@ button,
   -webkit-column-gap: 5%;
   -moz-column-gap: 5%;
   column-gap: 5%;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
   -ms-grid-columns: minmax(-webkit-min-content, 340px) minmax(180px, 250px) minmax(-webkit-min-content, 340px);
   -ms-grid-columns: minmax(min-content, 340px) minmax(180px, 250px) minmax(min-content, 340px);
   grid-template-columns: minmax(-webkit-min-content, 340px) minmax(180px, 250px) minmax(-webkit-min-content, 340px);
@@ -2759,6 +2759,7 @@ button,
     -moz-column-gap: 24px;
     column-gap: 24px;
     row-gap: 0;
+    padding: 0;
   }
 
   .advantages__item b {
@@ -2775,6 +2776,7 @@ button,
   .advantages__item--comfort,
   .advantages__item--experience {
     border: none;
+    padding: 0;
   }
 
   .advantages__item--comfort .advantages__box,
@@ -3360,7 +3362,15 @@ button,
     align-items: center;
   }
 
+  .advantages__item--comfort,
+  .advantages__item--experience {
+    padding: 0 44px 0;
+  }
+
   .advantages__item--equipment {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     width: 100%;
     min-height: 239px;
     padding: 44px 55px 42px;
