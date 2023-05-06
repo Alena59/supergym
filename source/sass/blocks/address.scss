@@ -34,7 +34,7 @@
   }
 
   & a {
-    display: inline-block;
+    width: max-content;
     color: $color-sapphire;
 
     &:hover {
@@ -130,6 +130,9 @@
 }
 
 .address__box--tel {
+  display: flex;
+  flex-direction: column;
+
   @include vp-767 {
     order: 2;
   }
