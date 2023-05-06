@@ -2356,7 +2356,7 @@ button,
 
 .address__list {
   overflow: hidden;
-  row-gap: 15px;
+  row-gap: 17px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
