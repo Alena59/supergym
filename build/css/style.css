@@ -1629,33 +1629,38 @@ button,
   row-gap: 13px;
 }
 
-.trainer__content:hover,
-.trainer__content:focus {
+.trainer__item:hover .trainer__content,
+.trainer__item:focus-within .trainer__content,
+.trainer__item:focus .trainer__content {
   padding: 20% 17% 15%;
   background: rgba(16, 38, 84, 0.89);
 }
 
-.trainer__content:hover .trainer__list,
-.trainer__content:focus .trainer__list {
+.trainer__item:hover .trainer__list,
+.trainer__item:focus-within .trainer__list,
+.trainer__item:focus .trainer__list {
   z-index: 10;
 }
 
-.trainer__content:hover h3,
-.trainer__content:focus h3 {
+.trainer__item:hover h3,
+.trainer__item:focus-within h3,
+.trainer__item:focus h3 {
   -webkit-box-ordinal-group: 1;
   -ms-flex-order: 0;
   order: 0;
   margin: 0;
 }
 
-.trainer__content:hover span,
-.trainer__content:focus span {
+.trainer__item:hover span,
+.trainer__item:focus-within span,
+.trainer__item:focus span {
   z-index: 10;
   color: #b6bdcc;
 }
 
-.trainer__content:hover img,
-.trainer__content:focus img {
+.trainer__item:hover img,
+.trainer__item:focus-within img,
+.trainer__item:focus img {
   z-index: -3;
 }
 
@@ -3322,8 +3327,9 @@ button,
     padding: 0 0 0 14px;
   }
 
-  .trainer__content:hover,
-  .trainer__content:focus {
+  .trainer__item:hover .trainer__content,
+  .trainer__item:focus-within .trainer__content,
+  .trainer__item:focus .trainer__content {
     padding: 20% 13% 15%;
   }
 

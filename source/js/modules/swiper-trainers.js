@@ -16,20 +16,23 @@ const initTrainersSwiper = () => {
         breakpoints: {
 
           320: {
+            initialSlide: -1,
             slidesPerView: 1,
             spaceBetween: 20,
-            initialSlide: -1,
+            slidesPerGroup: 1,
           },
 
           768: {
-            initialSlide: -2,
+            initialSlide: -1,
             slidesPerView: 2,
+            slidesPerGroup: 2,
             spaceBetween: 30,
           },
 
           1200: {
-            initialSlide: -4,
+            initialSlide: -1,
             slidesPerView: 4,
+            slidesPerGroup: 4,
             spaceBetween: 40,
           },
         },
