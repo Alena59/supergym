@@ -8,6 +8,8 @@ if (form) {
 
   for (const input of allInputs) {
     input.removeAttribute('required');
+    input.removeAttribute('pattern');
+    input.removeAttribute('title');
   }
 }
 

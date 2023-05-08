@@ -29,6 +29,14 @@ function validateForm(form) {
 
     removeError(input);
 
+    if (input.dataset.validateType === 'phone') {
+      if (validatePhone(input)) {
+        removeError(input);
+        createError(input, 'Неккоректный номер - только цифры!');
+        result = false;
+      }
+    }
+
     if (input.dataset.required === 'true') {
       if (input.value === '') {
         removeError(input);
@@ -36,6 +44,10 @@ function validateForm(form) {
         result = false;
       }
     }
+  }
+
+  function validatePhone(input) {
+    return !/^[0-9]+$/.test(input.value);
   }
 
   return result;
