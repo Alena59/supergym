@@ -3319,7 +3319,7 @@ button,
   }
 
   .trainer__content span {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .trainer__list {
@@ -3330,7 +3330,7 @@ button,
   .trainer__item:hover .trainer__content,
   .trainer__item:focus-within .trainer__content,
   .trainer__item:focus .trainer__content {
-    padding: 20% 13% 15%;
+    padding: 19% 13% 15%;
   }
 
   .advantages {
