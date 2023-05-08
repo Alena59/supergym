@@ -47,7 +47,7 @@ function validateForm(form) {
   }
 
   function validatePhone(input) {
-    return !/^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/.test(input.value);
+    return !/^\+?[0-9\s\-\(\)]+$/.test(input.value);
   }
 
   return result;
