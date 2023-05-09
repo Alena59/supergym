@@ -1,5 +1,8 @@
-import Swiper from '../vendor/swiper';
+import Swiper, {Navigation, Pagination} from '../../../node_modules/swiper/swiper-bundle';
+Swiper.use([Navigation, Pagination]);
+
 const trainersSwiper = document.querySelector('.trainers__swiper');
+const reviewsSwiper = document.querySelector('.reviews__swiper');
 
 const initTrainersSwiper = () => {
   if (trainersSwiper) {
@@ -16,21 +19,18 @@ const initTrainersSwiper = () => {
         breakpoints: {
 
           320: {
-            initialSlide: -1,
             slidesPerView: 1,
             spaceBetween: 20,
             slidesPerGroup: 1,
           },
 
           768: {
-            initialSlide: -1,
             slidesPerView: 2,
             slidesPerGroup: 2,
             spaceBetween: 30,
           },
 
           1200: {
-            initialSlide: -1,
             slidesPerView: 4,
             slidesPerGroup: 4,
             spaceBetween: 40,
@@ -41,4 +41,23 @@ const initTrainersSwiper = () => {
   }
 };
 
-export {initTrainersSwiper};
+const initReviewsSwiper = () => {
+  if (reviewsSwiper) {
+    (() =>
+      new Swiper('.reviews__swiper', {
+        direction: 'horizontal',
+        loop: false,
+
+        initialSlide: 0,
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
+    )();
+
+  }
+};
+
+export {initTrainersSwiper, initReviewsSwiper};

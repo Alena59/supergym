@@ -1,6 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initTrainersSwiper} from './modules/swiper-trainers';
-import {initReviewsSwiper} from './modules/swiper-reviews';
+import {initTrainersSwiper, initReviewsSwiper} from './modules/init-swiper';
 import {setupVideo} from './modules/video';
 import {initTabs} from './modules/init-tabs';
 import {sendForm} from './modules/init-modal';
